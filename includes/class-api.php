@@ -1,4 +1,5 @@
 <?php
+
 namespace Upnrunn;
 
 // Exit if accessed directly.
@@ -12,6 +13,7 @@ class API {
 	 * Undocumented function
 	 *
 	 * @param [type] $body
+	 *
 	 * @return void
 	 */
 	public function mini_audit( $body ) {
@@ -89,6 +91,7 @@ class API {
 	 *
 	 * @param string $input
 	 * @param string $session_token
+	 *
 	 * @return void
 	 */
 	function get_places( $input = '', $session_token = '' ) {
@@ -126,6 +129,7 @@ class API {
 				$body = json_decode( $response['body'] );
 				if ( json_last_error() === JSON_ERROR_NONE ) {
 					set_transient( $transient_key, $body, DAY_IN_SECONDS );
+
 					return $body;
 				}
 			}
@@ -141,6 +145,7 @@ class API {
 	 *
 	 * @param string $place_id
 	 * @param string $session_token
+	 *
 	 * @return void
 	 */
 	function get_place_details( $place_id = '', $session_token = '' ) {
@@ -178,6 +183,7 @@ class API {
 				$body = json_decode( $response['body'] );
 				if ( json_last_error() === JSON_ERROR_NONE ) {
 					set_transient( $transient_key, $body, DAY_IN_SECONDS );
+
 					return $body;
 				}
 			}

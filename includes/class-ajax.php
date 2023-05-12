@@ -1,4 +1,5 @@
 <?php
+
 namespace Upnrunn;
 
 // Exit if accessed directly.
@@ -159,36 +160,6 @@ class AJAX {
 		delete_option( 'mini_audit_connect_credentials' );
 
 		wp_send_json( [] );
-
-		// $dummy_leads_list = dummy_leads_list();
-
-		// foreach ( $dummy_leads_list as $lead ) {
-		// 	$lead_id = create_lead( $lead );
-
-		// 	( new Query() )->update_lead(
-		// 		$lead_id,
-		// 		[
-		// 			'report' => maybe_serialize( mini_audit()->dummy_response() ),
-		// 		]
-		// 	);
-		// }
-
-		// delete_option( 'mini_audit_db_version' );
-		// delete_option( 'mini_audit_connect_options' );
-		// delete_option( 'mini_audit_connect_credentials' );
-		// delete_option( 'mini_audit_disconnect_options' );
-		// delete_option( 'mini_audit_options' );
-
-		// $db_query = $wpdb->query( "DROP TABLE IF EXISTS {$wpdb->prefix}mini_audit_leads" );
-		// wp_send_json( [ $db_query ] );
-
-		// $mini_audit = mini_audit()->api->mini_audit( get_dummy_mini_audit_body() );
-
-		// wp_send_json( [ ( new Query() )->get_lead( 1 ) ] );
-		// wp_send_json( [ send_mail( ( new Query() )->get_lead( 1 ) ) ] );
-
-		// $connect_credentials = get_mini_audit_connect_credentials();
-		// wp_send_json( $connect_credentials );
 
 		wp_send_json( [ get_mini_audit_options() ] );
 	}

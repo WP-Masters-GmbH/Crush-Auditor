@@ -1,10 +1,12 @@
 <?php
+
 namespace Upnrunn;
 
 /**
  * Undocumented function
  *
  * @param array $args
+ *
  * @return void
  */
 function create_lead( $args = [] ) {
@@ -32,7 +34,23 @@ function create_lead( $args = [] ) {
 
 	$table_name = $wpdb->prefix . 'mini_audit_leads';
 
-	$wpdb->insert( $table_name, $args, array( '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s' ) );
+	$wpdb->insert( $table_name, $args, array(
+		'%s',
+		'%s',
+		'%s',
+		'%s',
+		'%s',
+		'%s',
+		'%s',
+		'%s',
+		'%s',
+		'%s',
+		'%s',
+		'%s',
+		'%s',
+		'%s',
+		'%s'
+	) );
 
 	return $wpdb->insert_id;
 }
@@ -41,12 +59,13 @@ function create_lead( $args = [] ) {
  * Undocumented function
  *
  * @param integer $lead_id
+ *
  * @return void
  */
 function delete_lead( $lead_id = 0 ) {
 	return ( new Query_Builder() )->table( 'mini_audit_leads' )
-	->where( 'id', $lead_id )
-	->delete();
+	                              ->where( 'id', $lead_id )
+	                              ->delete();
 }
 
 /**
@@ -110,7 +129,7 @@ function dummy_leads_list() {
  * @return void
  */
 function prepare_report() {
-	$audit_report_id = get_query_var( 'audit_report_id' );
+	$audit_report_id = sanitize_text_field( get_query_var( 'audit_report_id' ) );
 	$options         = get_mini_audit_options();
 	$lead            = ( new Query() )->get_lead( $audit_report_id );
 
@@ -160,9 +179,14 @@ function prepare_report() {
 			if ( isset( $report['data']['statistics'], $report['data']['statistics']['healthScore'] ) ) {
 				$agenda_args['performance']['chartjs'] = json_encode(
 					[
-						'type'    => 'doughnut',
-						'data'    => [
-							'labels'   => [ __( 'On Page' ), __( 'Reviews' ), __( 'Rating' ), __( 'Category Frequency' ) ],
+						'type' => 'doughnut',
+						'data' => [
+							'labels'   => [
+								__( 'On Page' ),
+								__( 'Reviews' ),
+								__( 'Rating' ),
+								__( 'Category Frequency' )
+							],
 							'datasets' => [
 								[
 									'data'            => array_slice( (array) $report['data']['statistics']['healthScore'], 0, 4 ),
@@ -244,7 +268,7 @@ function prepare_report() {
 					'blur.html',
 					[
 						'id'                       => str_replace( '_', '-', $key ),
-						'title'                    => $value,
+						'title'                    => esc_html( $value ),
 						'table_caption'            => __( 'Here is the list of dummy items' ),
 						'table_columns'            => [ __( 'Index' ), __( 'Name' ), __( 'Address' ) ],
 						'table_items'              => $table_items,
@@ -354,9 +378,9 @@ Best regards,
 		$defaults[ 'mini_audit_options_' . $value . '_button_color' ]            = '#ffffff';
 	}
 
-	$defaults[ 'mini_audit_options_hero_status' ]                  = 0;
-	$defaults[ 'mini_audit_options_hero_title' ]                    = __( 'Unlock the power of your Google Business Profile with just a few clicks' );
-	$defaults[ 'mini_audit_options_hero_description' ]             = __( 'Analyze its performance, diagnose why it isn\'t ranking well, and get tips for optimization.' );
+	$defaults['mini_audit_options_hero_status']      = 0;
+	$defaults['mini_audit_options_hero_title']       = __( 'Unlock the power of your Google Business Profile with just a few clicks' );
+	$defaults['mini_audit_options_hero_description'] = __( 'Analyze its performance, diagnose why it isn\'t ranking well, and get tips for optimization.' );
 
 	return $defaults;
 }
@@ -423,6 +447,7 @@ function get_dummy_mini_audit_body() {
  * Undocumented function
  *
  * @param array $lead
+ *
  * @return void
  */
 function send_mail( $lead = [] ) {
@@ -437,17 +462,17 @@ function send_mail( $lead = [] ) {
 
 	ob_start();
 	?>
-	<!doctype html>
-	<html lang="en">
-	  <head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>[title]</title>
-	  </head>
-	  <body>
-		<?php echo wpautop( $mail_content ); ?>
-	  </body>
-	</html>
+    <!doctype html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>[title]</title>
+    </head>
+    <body>
+	<?php echo wpautop( $mail_content ); ?>
+    </body>
+    </html>
 	<?php
 	$body = ob_get_clean();
 	$body = str_replace( '[title]', $mini_audit_options['mini_audit_options_mail_subject'], $body );

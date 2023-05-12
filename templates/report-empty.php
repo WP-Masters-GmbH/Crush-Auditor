@@ -12,7 +12,7 @@
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 	<div class="mini-audit-report empty">
-		<p><?php echo __('We are aware of your request to create an audit report for the specified Google Business Profile. Our team is working on it and will notify you via email once the report is ready for you to review.'); ?></p>
+		<p><?php _e('We are aware of your request to create an audit report for the specified Google Business Profile. Our team is working on it and will notify you via email once the report is ready for you to review.'); ?></p>
 	</div>
 </div><!-- #page -->
 

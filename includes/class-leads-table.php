@@ -1,4 +1,5 @@
 <?php
+
 namespace Upnrunn;
 
 // Exit if accessed directly.
@@ -62,8 +63,14 @@ class Leads_Table extends \WP_List_Table {
 	 * @return void
 	 */
 	public function get_columns() {
+
+		ob_start(); ?>
+        <input type="checkbox"/>
+		<?php
+		$checkbox = ob_get_clean();
+
 		$columns = array(
-			'cb'         => '<input type="checkbox" />',
+			'cb'         => $checkbox,
 			'name'       => __( 'Name' ),
 			'last_name'  => __( 'Last Name' ),
 			'email'      => __( 'Email' ),
@@ -82,6 +89,7 @@ class Leads_Table extends \WP_List_Table {
 	 *
 	 * @param [type] $item
 	 * @param [type] $column_name
+	 *
 	 * @return void
 	 */
 	public function column_default( $item, $column_name ) {
@@ -106,26 +114,35 @@ class Leads_Table extends \WP_List_Table {
 	 * Undocumented function
 	 *
 	 * @param [type] $item
+	 *
 	 * @return void
 	 */
 	public function column_cb( $item ) {
-		return sprintf(
-			'<input type="checkbox" name="lead[]" value="%s" />',
-			$item->id
-		);
+
+		ob_start(); ?>
+        <input type="checkbox" name="lead[]" value="<?php echo esc_attr( $item->id ); ?>"/>
+		<?php
+
+		return ob_get_clean();
 	}
 
 	/**
 	 * Undocumented function
 	 *
 	 * @param [type] $item
+	 *
 	 * @return void
 	 */
 	function column_name( $item ) {
 		$view_link = home_url( '/mini-audit-report/' . $item->id );
 
+		ob_start(); ?>
+        <a target="_blank" href="<?php esc_url( $view_link ); ?>"><?php _e( 'View' ) ?></a>
+		<?php
+		$view = ob_get_clean();
+
 		$actions = array(
-			'view' => '<a target="_blank" href="' . $view_link . '">' . __( 'View' ) . '</a>',
+			'view' => $view
 		);
 
 		return sprintf( '%1$s %2$s', $item->name, $this->row_actions( $actions ) );
@@ -148,6 +165,7 @@ class Leads_Table extends \WP_List_Table {
 	 * Undocumented function
 	 *
 	 * @param [type] $which
+	 *
 	 * @return void
 	 */
 	protected function extra_tablenav( $which ) {
@@ -156,13 +174,13 @@ class Leads_Table extends \WP_List_Table {
 		}
 
 		?>
-		<div class="alignleft actions">
-		<?php
-		if ( 'top' === $which ) {
-			submit_button( __( 'Export All', 'mini-audit' ), 'primary', 'export_all', false );
-		}
-		?>
-		</div>
+        <div class="alignleft actions">
+			<?php
+			if ( 'top' === $which ) {
+				submit_button( __( 'Export All', 'mini-audit' ), 'primary', 'export_all', false );
+			}
+			?>
+        </div>
 		<?php
 	}
 }

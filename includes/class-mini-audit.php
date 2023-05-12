@@ -22,6 +22,7 @@ final class Mini_Audit {
 		if ( is_null( self::$_instance ) ) {
 			self::$_instance = new self();
 		}
+
 		return self::$_instance;
 	}
 
@@ -56,9 +57,7 @@ final class Mini_Audit {
 		$this->loader = new \Twig\Loader\FilesystemLoader( plugin_dir_path( GMB_CRUSH_MINI_AUDIT_FILE ) . '/templates' );
 		$this->twig   = new \Twig\Environment(
 			$this->loader,
-			[
-				// 'cache' => plugin_dir_path( GMB_CRUSH_MINI_AUDIT_FILE ) . '/compilation_cache',
-			]
+			[]
 		);
 	}
 
@@ -82,7 +81,7 @@ final class Mini_Audit {
 	public function redirect() {
 		if ( get_option( 'mini_audit_do_activation_redirect', false ) ) {
 			delete_option( 'mini_audit_do_activation_redirect' );
-			wp_redirect( admin_url( add_query_arg( array( 'page' => 'mini-audit' ), 'admin.php' ) ) );
+			wp_safe_redirect( admin_url( add_query_arg( array( 'page' => 'mini-audit' ), 'admin.php' ) ) );
 			exit();
 		}
 	}
@@ -104,6 +103,7 @@ final class Mini_Audit {
 	 *
 	 * @param string $template
 	 * @param array $args
+	 *
 	 * @return void
 	 */
 	public function render( $template = '', $args = [] ) {
@@ -117,6 +117,7 @@ final class Mini_Audit {
 	 */
 	public function dummy_response( $json = 'block-paving-layer.json' ) {
 		$json = file_get_contents( plugin_dir_path( GMB_CRUSH_MINI_AUDIT_FILE ) . 'includes/' . $json );
+
 		return json_decode( $json, true );
 	}
 }

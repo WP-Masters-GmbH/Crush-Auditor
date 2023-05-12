@@ -6,12 +6,12 @@ namespace Upnrunn;
 defined( 'ABSPATH' ) || exit;
 
 class Options {
-	private $nav_tabs                  = [];
-	private $mini_audit_connect_page   = '';
-	private $mini_audit_options_page   = '';
-	private $mini_audit_email_page     = '';
+	private $nav_tabs = [];
+	private $mini_audit_connect_page = '';
+	private $mini_audit_options_page = '';
+	private $mini_audit_email_page = '';
 	private $mini_audit_shortcode_page = '';
-	private $mini_audit_payment_page   = '';
+	private $mini_audit_payment_page = '';
 
 	/**
 	 * Undocumented function
@@ -19,7 +19,6 @@ class Options {
 	public function __construct() {
 		$this->setup_globals();
 		$this->setup_actions();
-
 	}
 
 	/**
@@ -99,7 +98,7 @@ class Options {
 
 		if ( 'mini-audit' === $plugin_page ) {
 			if ( ( 'not_disconnected' === $disconnect_options['mini_audit_disconnect_field_status'] ) ||
-				( '' !== $connect_credentials['accessToken'] )
+			     ( '' !== $connect_credentials['accessToken'] )
 			) {
 				add_settings_section(
 					'mini_audit_disconnect',
@@ -537,6 +536,7 @@ class Options {
 	 * @param [type] $option
 	 * @param [type] $old_value
 	 * @param [type] $value
+	 *
 	 * @return void
 	 */
 	public function do_authenticate( $option, $value ) {
@@ -553,9 +553,10 @@ class Options {
 	 * @param [type] $option
 	 * @param [type] $old_value
 	 * @param [type] $value
+	 *
 	 * @return void
 	 */
-	public function re_authenticate( $value, $option, $old_value) {
+	public function re_authenticate( $value, $option, $old_value ) {
 		if ( 'mini_audit_connect_options' === $option ) {
 			if ( isset( $value['mini_audit_connect_field_email'], $value['mini_audit_connect_field_password'] ) ) {
 				$this->authenticate( $value );
@@ -569,6 +570,7 @@ class Options {
 	 * Undocumented function
 	 *
 	 * @param [type] $value
+	 *
 	 * @return void
 	 */
 	public function authenticate( $value ) {
@@ -585,11 +587,12 @@ class Options {
 
 			if ( is_wp_error( $response ) ) {
 				add_settings_error( 'mini_audit_messages', 'mini_audit_message', $response->get_error_message(), 'error' );
+
 				return;
 			}
 
 			$response_code = wp_remote_retrieve_response_code( $response );
-			$body      = json_decode( $response['body'], true );
+			$body          = json_decode( $response['body'], true );
 			if ( json_last_error() === JSON_ERROR_NONE ) {
 				if ( 200 === $response_code ) {
 					update_option( 'mini_audit_connect_credentials', $body );
@@ -616,6 +619,7 @@ class Options {
 	 * @param [type] $option
 	 * @param [type] $old_value
 	 * @param [type] $value
+	 *
 	 * @return void
 	 */
 	public function disconnect( $value, $option, $old_value ) {
@@ -633,12 +637,19 @@ class Options {
 	 * Undocumented function
 	 *
 	 * @param [type] $classes
+	 *
 	 * @return void
 	 */
 	public function admin_body_classes( $classes ) {
 		$screen = get_current_screen();
 
-		if ( in_array( $screen->id, [ $this->mini_audit_connect_page, $this->mini_audit_options_page, $this->mini_audit_email_page, $this->mini_audit_shortcode_page, $this->mini_audit_payment_page ], true ) ) {
+		if ( in_array( $screen->id, [
+			$this->mini_audit_connect_page,
+			$this->mini_audit_options_page,
+			$this->mini_audit_email_page,
+			$this->mini_audit_shortcode_page,
+			$this->mini_audit_payment_page
+		], true ) ) {
 			$mini_audit_class = ' mini-audit';
 			if ( isset( $this->nav_tabs ) && $this->nav_tabs ) {
 				$mini_audit_class .= ' mini-audit-is-tabbed-screen';
@@ -685,11 +696,12 @@ class Options {
 	 * Undocumented function
 	 *
 	 * @param [type] $args
+	 *
 	 * @return void
 	 */
 	public function mini_audit_connect_section_callback( $args ) {
 		?>
-		<p id="<?php echo esc_attr( $args['id'] ); ?>"><?php esc_html_e( 'Please enter email address and password below to connect your account.' ); ?></p>
+        <p id="<?php echo esc_attr( $args['id'] ); ?>"><?php _e( 'Please enter email address and password below to connect your account.' ); ?></p>
 		<?php
 	}
 
@@ -697,11 +709,12 @@ class Options {
 	 * Undocumented function
 	 *
 	 * @param [type] $args
+	 *
 	 * @return void
 	 */
 	public function mini_audit_disconnect_section_callback( $args ) {
 		?>
-		<p id="<?php echo esc_attr( $args['id'] ); ?>"><?php esc_html_e( 'Please click on the disconnect button below to disconnect your account.' ); ?></p>
+        <p id="<?php echo esc_attr( $args['id'] ); ?>"><?php _e( 'Please click on the disconnect button below to disconnect your account.' ); ?></p>
 		<?php
 	}
 
@@ -709,11 +722,12 @@ class Options {
 	 * Undocumented function
 	 *
 	 * @param [type] $args
+	 *
 	 * @return void
 	 */
 	public function mini_audit_hero_section_callback( $args ) {
 		?>
-		<p id="<?php echo esc_attr( $args['id'] ); ?>"><?php esc_html_e( 'Update title and description below.' ); ?></p>
+        <p id="<?php echo esc_attr( $args['id'] ); ?>"><?php _e( 'Update title and description below.' ); ?></p>
 		<?php
 	}
 
@@ -721,11 +735,12 @@ class Options {
 	 * Undocumented function
 	 *
 	 * @param [type] $args
+	 *
 	 * @return void
 	 */
 	public function mini_audit_continue_button_section_callback( $args ) {
 		?>
-		<p id="<?php echo esc_attr( $args['id'] ); ?>"><?php esc_html_e( 'Update text and styles for continue button below.' ); ?></p>
+        <p id="<?php echo esc_attr( $args['id'] ); ?>"><?php _e( 'Update text and styles for continue button below.' ); ?></p>
 		<?php
 	}
 
@@ -733,11 +748,12 @@ class Options {
 	 * Undocumented function
 	 *
 	 * @param [type] $args
+	 *
 	 * @return void
 	 */
 	public function mini_audit_audit_button_section_callback( $args ) {
 		?>
-		<p id="<?php echo esc_attr( $args['id'] ); ?>"><?php esc_html_e( 'Update text and styles for audit button below.' ); ?></p>
+        <p id="<?php echo esc_attr( $args['id'] ); ?>"><?php _e( 'Update text and styles for audit button below.' ); ?></p>
 		<?php
 	}
 
@@ -745,11 +761,12 @@ class Options {
 	 * Undocumented function
 	 *
 	 * @param [type] $args
+	 *
 	 * @return void
 	 */
 	public function mini_audit_options_section_callback( $args ) {
 		?>
-		<p id="<?php echo esc_attr( $args['id'] ); ?>"><?php esc_html_e( 'Update text and styles for blur sections button below.' ); ?></p>
+        <p id="<?php echo esc_attr( $args['id'] ); ?>"><?php _e( 'Update text and styles for blur sections button below.' ); ?></p>
 		<?php
 	}
 
@@ -757,11 +774,12 @@ class Options {
 	 * Undocumented function
 	 *
 	 * @param [type] $args
+	 *
 	 * @return void
 	 */
 	public function mini_audit_options_mail_section_callback( $args ) {
 		?>
-		<p id="<?php echo esc_attr( $args['id'] ); ?>"><?php esc_html_e( 'Update email address that emails are sent from.' ); ?></p>
+        <p id="<?php echo esc_attr( $args['id'] ); ?>"><?php _e( 'Update email address that emails are sent from.' ); ?></p>
 		<?php
 	}
 
@@ -769,6 +787,7 @@ class Options {
 	 * Undocumented function
 	 *
 	 * @param [type] $args
+	 *
 	 * @return void
 	 */
 	public function input( $args ) {
@@ -780,30 +799,31 @@ class Options {
 
 		if ( 'switch' === $args['type'] ) {
 			$field_class .= ' form-switch';
-			$input_class  = 'form-check-input';
+			$input_class = 'form-check-input';
 		}
 
 		?>
-		<div class="<?php echo esc_attr( $field_class ); ?>">
+        <div class="<?php echo esc_attr( $field_class ); ?>">
 			<?php if ( 'switch' === $args['type'] ) : ?>
-				<input
-					id="<?php echo esc_attr( $args['id'] ); ?>"
-					class="<?php echo esc_attr( $input_class ); ?>"
-					type="<?php echo esc_attr( $type ); ?>"
-					role="<?php echo esc_attr( $role ); ?>"
-					name="<?php echo esc_attr( $args['name'] ); ?>"
-					value="1" <?php checked( $value, 1 ); ?> />
-				<label class="form-check-label" for="<?php echo esc_attr( $args['id'] ); ?>">Toggle to hide or show this section.</label>
+                <input
+                        id="<?php echo esc_attr( $args['id'] ); ?>"
+                        class="<?php echo esc_attr( $input_class ); ?>"
+                        type="<?php echo esc_attr( $type ); ?>"
+                        role="<?php echo esc_attr( $role ); ?>"
+                        name="<?php echo esc_attr( $args['name'] ); ?>"
+                        value="1" <?php checked( $value, 1 ); ?> />
+                <label class="form-check-label" for="<?php echo esc_attr( $args['id'] ); ?>">Toggle to hide or show this
+                    section.</label>
 			<?php else : ?>
-				<input
-					id="<?php echo esc_attr( $args['id'] ); ?>"
-					class="<?php echo esc_attr( $input_class ); ?>"
-					type="<?php echo esc_attr( $type ); ?>"
-					name="<?php echo esc_attr( $args['name'] ); ?>"
-					value="<?php echo esc_attr( $value ); ?>"
-				>
+                <input
+                        id="<?php echo esc_attr( $args['id'] ); ?>"
+                        class="<?php echo esc_attr( $input_class ); ?>"
+                        type="<?php echo esc_attr( $type ); ?>"
+                        name="<?php echo esc_attr( $args['name'] ); ?>"
+                        value="<?php echo esc_attr( $value ); ?>"
+                >
 			<?php endif; ?>
-		</div>		
+        </div>
 		<?php
 	}
 
@@ -811,15 +831,17 @@ class Options {
 	 * Undocumented function
 	 *
 	 * @param [type] $args
+	 *
 	 * @return void
 	 */
 	public function textarea( $args ) {
 		?>
-		<textarea id="<?php echo esc_attr( $args['id'] ); ?>" name="<?php echo esc_attr( $args['name'] ); ?>" rows="10" cols="50"><?php echo esc_attr( $args['value'] ); ?></textarea>
+        <textarea id="<?php echo esc_attr( $args['id'] ); ?>" name="<?php echo esc_attr( $args['name'] ); ?>" rows="10"
+                  cols="50"><?php echo esc_html( $args['value'] ); ?></textarea>
 		<?php if ( 'mini_audit_options_mail_content' === $args['id'] ) : ?>
-			<p class="description">
-				<?php echo __( 'Note: You can use the codes <code>[user]</code>, <code>[report_url]</code>, and <code>[company]</code> in the textarea above. These will be replaced with dynamic content before the email is sent to the users.' ); ?>
-			</p>
+            <p class="description">
+				<?php _e( 'Note: You can use the codes <code>[user]</code>, <code>[report_url]</code>, and <code>[company]</code> in the textarea above. These will be replaced with dynamic content before the email is sent to the users.' ); ?>
+            </p>
 		<?php endif; ?>
 		<?php
 	}
@@ -828,35 +850,24 @@ class Options {
 	 * Undocumented function
 	 *
 	 * @param [type] $args
+	 *
 	 * @return void
 	 */
 	public function mini_audit_disconnect_field_callback( $args ) {
-		$allowed_html = [
-			'strong' => [],
-		];
-
 		?>
-		<input
-			type="<?php echo esc_attr( $args['type'] ); ?>"
-			id="<?php echo esc_attr( $args['name'] ); ?>"
-			name="mini_audit_disconnect_options[<?php echo esc_attr( $args['name'] ); ?>]"
-			value="<?php echo esc_attr( $args['value'] ); ?>"
-		>
-		<p class="status">
-			<span class="dashicons dashicons-yes-alt"></span>
-			<span><?php echo esc_html( __( 'Connected' ) ); ?></span>
-		</p>
-		<p class="description">
-			<?php
-			echo wp_kses(
-				sprintf(
-					__( 'You have connected your account using <strong>%s</strong>. You can disconnect and connect with a different account at any time.' ),
-					$args['user_email']
-				),
-				$allowed_html
-			);
-			?>
-		</p>
+        <input
+                type="<?php echo esc_attr( $args['type'] ); ?>"
+                id="<?php echo esc_attr( $args['name'] ); ?>"
+                name="mini_audit_disconnect_options[<?php echo esc_attr( $args['name'] ); ?>]"
+                value="<?php echo esc_attr( $args['value'] ); ?>"
+        >
+        <p class="status">
+            <span class="dashicons dashicons-yes-alt"></span>
+            <span><?php _e( 'Connected' ); ?></span>
+        </p>
+        <p class="description">You have connected your account using
+            <strong><?php echo esc_html( $args['user_email'] ); ?></strong>. You can disconnect and connect with a
+            different account at any time.</p>
 		<?php
 	}
 
@@ -864,36 +875,28 @@ class Options {
 	 * Undocumented function
 	 *
 	 * @param [type] $args
+	 *
 	 * @return void
 	 */
 	public function mini_audit_connect_field_callback( $args ) {
 		?>
-		<input
-			type="<?php echo esc_attr( $args['type'] ); ?>"
-			id="<?php echo esc_attr( $args['name'] ); ?>"
-			name="mini_audit_connect_options[<?php echo esc_attr( $args['name'] ); ?>]"
-			value="<?php echo esc_attr( $args['value'] ); ?>"
-			placeholder="<?php echo esc_attr( $args['placeholder'] ); ?>"
-		>
+        <input
+                type="<?php echo esc_attr( $args['type'] ); ?>"
+                id="<?php echo esc_attr( $args['name'] ); ?>"
+                name="mini_audit_connect_options[<?php echo esc_attr( $args['name'] ); ?>]"
+                value="<?php echo esc_attr( $args['value'] ); ?>"
+                placeholder="<?php echo esc_attr( $args['placeholder'] ); ?>"
+        >
 
-		<?php if ( 'password' === $args['type'] ) : ?>
-			<p class="description">
-				<?php
-				printf(
-					__( 'Don\'t have an account? <a href="%s" target="_blank">Signup</a>.', 'text_domain' ),
-					'https://www.gmbcrush.com/pricing/'
-				);
-				?>
-			</p>
-			<p class="description">
-				<?php
-				printf(
-					__( 'Forgot Your Password? <a href="%s" target="_blank">Reset Password</a>.', 'text_domain' ),
-					'https://app.gmbcrush.com/forgot-password'
-				);
-				?>
-			</p>
-			<?php
+		<?php if ( 'password' === $args['type'] ) :
+			$account_link = 'https://www.gmbcrush.com/pricing/';
+			$forgot_pass_link = 'https://app.gmbcrush.com/forgot-password';
+			?>
+            <p class="description">Don't have an account? <a href="<?php echo esc_url( $account_link ); ?>"
+                                                             target="_blank">Signup</a>.</p>
+            <p class="description">Forgot Your Password? <a href="<?php echo esc_url( $forgot_pass_link ); ?>"
+                                                            target="_blank">Reset Password</a>.</p>
+		<?php
 		endif;
 	}
 
@@ -943,8 +946,8 @@ class Options {
 		settings_errors( 'mini_audit_messages' );
 
 		?>
-		<div class="mini-audit-body">
-			<form action="options.php" method="post">
+        <div class="mini-audit-body">
+            <form action="options.php" method="post">
 				<?php
 				// output security fields for the registered setting "wporg"
 				settings_fields( 'mini_audit' );
@@ -954,8 +957,8 @@ class Options {
 				// output save settings button
 				submit_button( $submit_button_text );
 				?>
-			</form>
-		</div>
+            </form>
+        </div>
 		<?php
 	}
 
@@ -971,9 +974,9 @@ class Options {
 		);
 
 		?>
-		<div class="mini-audit-body">
-			Coming soon...
-		</div>
+        <div class="mini-audit-body">
+            Coming soon...
+        </div>
 		<?php
 	}
 
@@ -989,20 +992,20 @@ class Options {
 		);
 
 		?>
-		<div class="mini-audit-body">
-			<div class="block">
-				<p>To insert the WordPress shortcode into a post or page, follow these steps:</p>
-				<ul>
-					<li>Log in to your WordPress dashboard.</li>
-					<li>Navigate to the post or page where you want to add the shortcode.</li>
-					<li>In the post editor, click on the position where you want the shortcode to appear.</li>
-					<li>Type the shortcode into the editor, using the following format: <code>[mini-audit]</code>.</li>
-					<li>Publish or update the post or page to see the shortcode in action.</li>
-				</ul>
-			
-				<p>None: You can insert the shortcode <code>[mini-audit]</code> into any page to display the form.</p>
-			</div>
-		</div>
+        <div class="mini-audit-body">
+            <div class="block">
+                <p>To insert the WordPress shortcode into a post or page, follow these steps:</p>
+                <ul>
+                    <li>Log in to your WordPress dashboard.</li>
+                    <li>Navigate to the post or page where you want to add the shortcode.</li>
+                    <li>In the post editor, click on the position where you want the shortcode to appear.</li>
+                    <li>Type the shortcode into the editor, using the following format: <code>[mini-audit]</code>.</li>
+                    <li>Publish or update the post or page to see the shortcode in action.</li>
+                </ul>
+
+                <p>None: You can insert the shortcode <code>[mini-audit]</code> into any page to display the form.</p>
+            </div>
+        </div>
 		<?php
 	}
 
@@ -1012,18 +1015,19 @@ class Options {
 	 * @param string $title
 	 * @param string $active_tab
 	 * @param string $context
+	 *
 	 * @return void
 	 */
 	public function tabbed_screen_header( $title = '', $active_tab = '', $context = 'settings' ) {
 		?>
-		<div class="mini-audit-header">
-			<div class="mini-audit-title-section">
-				<h1><span class="mini-audit-badge"></span> <?php echo esc_html( $title ); ?></h1>
-			</div>
-			<nav class="mini-audit-tabs-wrapper">
+        <div class="mini-audit-header">
+            <div class="mini-audit-title-section">
+                <h1><span class="mini-audit-badge"></span> <?php echo esc_html( $title ); ?></h1>
+            </div>
+            <nav class="mini-audit-tabs-wrapper">
 				<?php $this->admin_tabs( esc_html( $active_tab ) ); ?>
-			</nav>
-		</div>
+            </nav>
+        </div>
 		<?php
 	}
 
@@ -1033,6 +1037,7 @@ class Options {
 	 * @param string $active_tab
 	 * @param string $context
 	 * @param boolean $echo
+	 *
 	 * @return void
 	 */
 	public function admin_tabs( $active_tab = '', $context = 'settings', $echo = true ) {
@@ -1044,9 +1049,15 @@ class Options {
 
 		// Loop through tabs and build navigation.
 		foreach ( array_values( $this->nav_tabs ) as $tab_data ) {
-			$is_current  = (bool) ( $tab_data['name'] == $active_tab );
-			$tab_class   = $is_current ? $active_class : $idle_class;
-			$tabs_html[] = '<a href="' . esc_url( $tab_data['href'] ) . '" class="' . esc_attr( $tab_class ) . '">' . esc_html( $tab_data['name'] ) . '</a>';
+			$is_current = (bool) ( $tab_data['name'] == $active_tab );
+			$tab_class  = $is_current ? $active_class : $idle_class;
+
+			ob_start(); ?>
+            <a href="<?php echo esc_url( $tab_data['href'] ) ?>"
+               class="<?php echo esc_attr( $tab_class ) ?>"><?php echo esc_html( $tab_data['name'] ) ?></a>
+			<?php
+
+			$tabs_html[] = ob_get_clean();
 		}
 
 		if ( ! $echo ) {

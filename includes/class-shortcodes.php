@@ -1,4 +1,5 @@
 <?php
+
 namespace Upnrunn;
 
 // Exit if accessed directly.
@@ -32,7 +33,7 @@ class Shortcodes {
 			'axios',
 			'https://unpkg.com/axios/dist/axios.min.js',
 			[],
-			'1.3.3',
+			$asset_file['version'],
 			true
 		);
 
@@ -105,7 +106,11 @@ class Shortcodes {
 		wp_enqueue_script( 'mini-audit' );
 		wp_enqueue_style( 'mini-audit' );
 
-		return '<div id="mini-audit">Loading...</div>';
+		ob_start(); ?>
+        <div id="mini-audit">Loading...</div>
+		<?php
+
+		return ob_get_clean();
 	}
 }
 

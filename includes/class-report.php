@@ -34,6 +34,7 @@ class Report {
 	 */
 	public function add_query_vars( $query_vars ) {
 		$query_vars[] = 'audit_report_id';
+
 		return $query_vars;
 	}
 
@@ -47,11 +48,11 @@ class Report {
 			return;
 		}
 
-		$audit_report_id = get_query_var( 'audit_report_id' );
+		$audit_report_id = sanitize_text_field( get_query_var( 'audit_report_id' ) );
 		$lead            = ( new Query() )->get_lead( $audit_report_id );
 
 		if ( ! $lead ) {
-			wp_redirect( home_url() );
+			wp_safe_redirect( home_url() );
 			die;
 		}
 	}
@@ -60,6 +61,7 @@ class Report {
 	 * Undocumented function
 	 *
 	 * @param [type] $template
+	 *
 	 * @return void
 	 */
 	public function template_include( $template ) {
@@ -67,7 +69,7 @@ class Report {
 			return $template;
 		}
 
-		$audit_report_id = get_query_var( 'audit_report_id' );
+		$audit_report_id = sanitize_text_field( get_query_var( 'audit_report_id' ) );
 		$lead            = ( new Query() )->get_lead( $audit_report_id );
 
 		if ( 'POST' === $_SERVER['REQUEST_METHOD'] ) {
@@ -101,9 +103,10 @@ class Report {
 			wp_enqueue_style( 'mini-audit-report' );
 			if ( empty( $lead['report'] ) ) {
 				return plugin_dir_path( GMB_CRUSH_MINI_AUDIT_FILE ) . '/templates/report-empty.php';
-			} 
-			
+			}
+
 			wp_enqueue_script( 'mini-audit-report' );
+
 			return plugin_dir_path( GMB_CRUSH_MINI_AUDIT_FILE ) . '/templates/report.php';
 		}
 
@@ -146,9 +149,9 @@ class Report {
 
 		$sections = get_report_sections();
 		foreach ( array_keys( $sections ) as $value ) {
-			$prefix            = str_replace( '_', '-', $value );
-			$background_color  = $mini_audit_options[ 'mini_audit_options_' . $value . '_button_background_color' ];
-			$button_color      = $mini_audit_options[ 'mini_audit_options_' . $value . '_button_color' ];
+			$prefix           = str_replace( '_', '-', $value );
+			$background_color = $mini_audit_options[ 'mini_audit_options_' . $value . '_button_background_color' ];
+			$button_color     = $mini_audit_options[ 'mini_audit_options_' . $value . '_button_color' ];
 			$report_variables .= "--{$prefix}-button-background-color: {$background_color};";
 			$report_variables .= "--{$prefix}-button-color: {$button_color};";
 		}

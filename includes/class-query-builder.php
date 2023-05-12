@@ -1,4 +1,5 @@
 <?php
+
 namespace Upnrunn;
 
 // Exit if accessed directly.
@@ -13,7 +14,7 @@ use Exception;
 class Query_Builder {
 	public $query;
 	public $results;
-	public $found_rows    = 0;
+	public $found_rows = 0;
 	public $max_num_pages = 0;
 
 	protected function reset(): void {
@@ -46,7 +47,9 @@ class Query_Builder {
 
 	/**
 	 * Build a INSERT row query.
-	 * @param  array  $data [description]
+	 *
+	 * @param array $data [description]
+	 *
 	 * @return [type]       [description]
 	 */
 	public function insert( array $data ) {
@@ -59,7 +62,9 @@ class Query_Builder {
 
 	/**
 	 * Build a DELETE row query.
-	 * @param  array  $data [description]
+	 *
+	 * @param array $data [description]
+	 *
 	 * @return [type]       [description]
 	 */
 	public function delete() {
@@ -78,7 +83,7 @@ class Query_Builder {
 	 *
 	 * @return void
 	 */
-	public function update( $data = []) {
+	public function update( $data = [] ) {
 		global $wpdb;
 
 		$where = [];
@@ -108,6 +113,7 @@ class Query_Builder {
 	 * @param string $field
 	 * @param string $value
 	 * @param string $operator
+	 *
 	 * @return Query_Builder
 	 */
 	public function or_where( string $field, string $value, string $operator = '=' ): Query_Builder {
@@ -143,13 +149,13 @@ class Query_Builder {
 		$query = $this->query;
 
 		$found_rows = '';
-		$distinct = '';
-		$fields = isset($this->query->select) ? implode( ', ', $this->query->select ): '*';
+		$distinct   = '';
+		$fields     = isset( $this->query->select ) ? implode( ', ', $this->query->select ) : '*';
 
 		if ( ! empty( $this->query->limit ) ) {
 			$found_rows = 'SQL_CALC_FOUND_ROWS';
 		}
-		
+
 		$where = '';
 
 		if ( ! empty( $query->where ) ) {
@@ -175,7 +181,7 @@ class Query_Builder {
 			FROM {$this->query->table}
 		";
 
-		if('' !==$where ) {
+		if ( '' !== $where ) {
 			$sql .= " WHERE $where";
 		}
 

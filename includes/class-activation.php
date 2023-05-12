@@ -1,4 +1,5 @@
 <?php
+
 namespace Upnrunn;
 
 // Exit if accessed directly.
@@ -16,7 +17,6 @@ class Activation {
 
 		if ( is_ssl() ) {
 			self::install();
-			// self::insert_dummy_records();
 
 			update_option( 'mini_audit_do_activation_redirect', true );
 			update_option( 'mini_audit_permalinks_flushed', false );

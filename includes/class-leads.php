@@ -41,7 +41,7 @@ class Leads {
 			'deleted' => isset( $_REQUEST['deleted'] ) ? absint( $_REQUEST['deleted'] ) : 0,
 		);
 
-		$bulk_messages            = array();
+		$bulk_messages         = array();
 		$bulk_messages['lead'] = array(
 			'deleted' => _n( '%s lead deleted.', '%s leads permanently deleted.', $bulk_counts['deleted'] ),
 		);
@@ -55,32 +55,29 @@ class Leads {
 			}
 		}
 		?>
-		<div class="wrap">
-			<h1 class="wp-heading-inline"><?php echo __( 'Leads' ); ?></h1>
+        <div class="wrap">
+            <h1 class="wp-heading-inline"><?php echo __( 'Leads' ); ?></h1>
 			<?php
-			if ( isset( $_REQUEST['s'] ) && strlen( $_REQUEST['s'] ) ) {
-				echo '<span class="subtitle">';
-				printf(
-					/* translators: %s: Search query. */
-					__( 'Search results for: %s' ),
-					'<strong>' . esc_html( $_REQUEST['s'] ) . '</strong>'
-				);
-				echo '</span>';
+			if ( isset( $_REQUEST['s'] ) && strlen( $_REQUEST['s'] ) ) { ?>
+                <span class="subtitle">Search results for: <strong><?php echo esc_html( $_REQUEST['s'] ); ?></strong></span>
+				<?php
 			}
 
-			if ( $messages ) {
-				echo '<div id="message" class="updated notice is-dismissible"><p>' . implode( ' ', $messages ) . '</p></div>';
+			if ( $messages ) { ?>
+                <div id="message" class="updated notice is-dismissible">
+                    <p><?php echo esc_html( implode( ' ', $messages ) ); ?></p></div>
+				<?php
 			}
 			unset( $messages );
 			?>
-			<form method="get">
-				<input type="hidden" name="page" value="mini-audit-leads">
+            <form method="get">
+                <input type="hidden" name="page" value="mini-audit-leads">
 				<?php
 				$_wp_list_table->search_box( __( 'Search Leads' ), 'search-leads' );
 				$_wp_list_table->display();
 				?>
-			</form>
-		</div>
+            </form>
+        </div>
 		<?php
 	}
 
@@ -111,7 +108,7 @@ class Leads {
 
 				foreach ( (array) $lead_ids as $lead_id ) {
 					delete_lead( $lead_id );
-					$deleted++;
+					$deleted ++;
 				}
 
 				$sendback = add_query_arg( 'deleted', $deleted, $sendback );
@@ -119,14 +116,15 @@ class Leads {
 
 			$sendback = remove_query_arg( array( 'action', 'action2' ), $sendback );
 
-			wp_redirect( $sendback );
-
+			wp_safe_redirect( $sendback );
 			exit();
-		} elseif ( isset( $_REQUEST['export_all'] ) && -1 != $_REQUEST['export_all'] ) {
+		} elseif ( isset( $_REQUEST['export_all'] ) && - 1 != $_REQUEST['export_all'] ) {
 			$this->bulk_actions_export_all();
 		} elseif ( ! empty( $_REQUEST['_wp_http_referer'] ) ) {
-			wp_redirect( remove_query_arg( array( '_wp_http_referer', '_wpnonce' ), wp_unslash( $_SERVER['REQUEST_URI'] ) ) );
-
+			wp_safe_redirect( remove_query_arg( array(
+				'_wp_http_referer',
+				'_wpnonce'
+			), wp_unslash( $_SERVER['REQUEST_URI'] ) ) );
 			exit();
 		}
 	}
@@ -173,27 +171,26 @@ class Leads {
 
 			foreach ( $mini_audit_leads['results'] as $lead ) {
 				fputcsv( $fp, [
-					$lead->id,
-					$lead->name,
-					$lead->last_name,
-					$lead->email,
-					$lead->phone,
-					$lead->keyword,
-					$lead->location,
-					$lead->place_id,
-					$lead->place_name,
-					$lead->place_address,
-					$lead->place_postal_code,
-					$lead->place_lat,
-					$lead->place_lng,
-					$lead->place_url,
-					$lead->created_at,
-					$lead->updated_at,
+					sanitize_text_field( $lead->id ),
+					sanitize_text_field( $lead->name ),
+					sanitize_text_field( $lead->last_name ),
+					sanitize_text_field( $lead->email ),
+					sanitize_text_field( $lead->phone ),
+					sanitize_text_field( $lead->keyword ),
+					sanitize_text_field( $lead->location ),
+					sanitize_text_field( $lead->place_id ),
+					sanitize_text_field( $lead->place_name ),
+					sanitize_text_field( $lead->place_address ),
+					sanitize_text_field( $lead->place_postal_code ),
+					sanitize_text_field( $lead->place_lat ),
+					sanitize_text_field( $lead->place_lng ),
+					sanitize_text_field( $lead->place_url ),
+					sanitize_text_field( $lead->created_at ),
+					sanitize_text_field( $lead->updated_at ),
 				] );
 			}
 
 			fclose( $fp );
-
 			exit();
 		}
 	}
