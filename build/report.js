@@ -1,0 +1,1 @@
+!function(){"use strict";const t=document.getElementById("performance-doughnut"),e=JSON.parse(t.dataset.chartjs);new Chart(t,{...e,options:{plugins:{legend:{display:!1},tooltip:{callbacks:{label:function(t){return t.formattedValue+"%"}}}}}})}();

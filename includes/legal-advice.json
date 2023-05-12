@@ -1,0 +1,209 @@
+{
+    "_id": "63aa81b987d654f90a8db253",
+    "id": "63aa81b987d654f90a8db24f",
+    "createdAt": "2022-12-27T05:25:13.344Z",
+    "updatedAt": "2022-12-27T05:25:13.344Z",
+    "userId": "635fcefdb3ee5d82c16f95e4",
+    "competitorsListId": "63aa817387d654f90a8db205",
+    "isShared": false,
+    "data": {
+        "keyword": "legal advice",
+        "device": "desktop",
+        "location": {
+            "address": "The Abbey Centre, 34 Great Smith St, London SW1P 3BU, UK",
+            "latitude": "51.4973738",
+            "longitude": "-0.1295503"
+        },
+        "competitors": [
+            {
+                "name": "William Sturges LLP Solicitors",
+                "isClaimed": true,
+                "id": "63aa817287d654f90a8db1b5"
+            },
+            {
+                "name": "Barnes Solicitors",
+                "isClaimed": false,
+                "id": "63aa817287d654f90a8db1b6"
+            },
+            {
+                "name": "CASTELO SOLICITORS",
+                "isClaimed": true,
+                "id": "63aa817287d654f90a8db1b7"
+            }
+        ],
+        "statistics": {
+            "categories": {
+                "business": {
+                    "name": "South Westminster Legal Advice Centre",
+                    "categories": [],
+                    "primaryCategories": [
+                        "Legal services"
+                    ]
+                },
+                "competitorsCategories": [
+                    {
+                        "name": "William Sturges LLP Solicitors",
+                        "categories": [
+                            "Divorce lawyer",
+                            "Attorney"
+                        ],
+                        "primaryCategories": [
+                            "Legal services"
+                        ]
+                    },
+                    {
+                        "name": "Barnes Solicitors",
+                        "categories": [],
+                        "primaryCategories": [
+                            "Legal services"
+                        ]
+                    },
+                    {
+                        "name": "CASTELO SOLICITORS",
+                        "categories": [],
+                        "primaryCategories": [
+                            "Legal services"
+                        ]
+                    }
+                ],
+                "notIncludedCategories": {
+                    "categories": [
+                        "Divorce lawyer",
+                        "Attorney"
+                    ],
+                    "primaryCategories": []
+                },
+                "suggestion": {
+                    "categories": [
+                        "Divorce lawyer",
+                        "Attorney"
+                    ],
+                    "primaryCategories": [
+                        "Legal services"
+                    ]
+                }
+            },
+            "reviewsGap": {
+                "statistic": [
+                    [
+                        "South Westminster Legal Advice Centre",
+                        25,
+                        4.7
+                    ],
+                    [
+                        "William Sturges LLP Solicitors",
+                        22,
+                        4.1
+                    ],
+                    [
+                        "Barnes Solicitors",
+                        40,
+                        4.7
+                    ],
+                    [
+                        "CASTELO SOLICITORS",
+                        9,
+                        4.6
+                    ]
+                ],
+                "suggestion": [
+                    [
+                        15,
+                        "Barnes Solicitors"
+                    ]
+                ]
+            },
+            "rankRating": [
+                [
+                    1,
+                    "South Westminster Legal Advice Centre",
+                    "4309519633516875774",
+                    "The Abbey Centre, 34 Great Smith St, London SW1P 3BU, United Kingdom",
+                    true
+                ],
+                [
+                    2,
+                    "William Sturges LLP Solicitors",
+                    "13530891806788487760",
+                    "Burwood House, 14-16 Caxton St, London SW1H 0QY, United Kingdom",
+                    true
+                ],
+                [
+                    3,
+                    "Barnes Solicitors",
+                    "6054169821950648734",
+                    "9 Albert Embankment, London SE1 7SP, United Kingdom",
+                    true
+                ],
+                [
+                    4,
+                    "CASTELO SOLICITORS",
+                    "4231660801511580489",
+                    "20 Victoria St, London SW1H 0NB, United Kingdom",
+                    true
+                ],
+                [
+                    6,
+                    "Edgewater Legal",
+                    "10881077504636617505",
+                    "Audley House, 13 Palace St, London SW1E 5HX",
+                    false
+                ],
+                [
+                    7,
+                    "Lisa's Law Solicitors",
+                    "1598694835149712460",
+                    "13 London Rd, Elephant and Castle, London SE1 6JZ",
+                    false
+                ],
+                [
+                    8,
+                    "GOOD ADVICE UK",
+                    "12121535204755484719",
+                    "Office 1.02, Vauxhall Sky Gardens, 153 Wandsworth Rd, London SW8 2GB",
+                    false
+                ],
+                [
+                    9,
+                    "Pothecary Witham Weld incorporating Haslam & Payne Solicitors",
+                    "14565092753430694656",
+                    "84 Eccleston Square, Pimlico, London SW1V 1PX",
+                    false
+                ],
+                [
+                    10,
+                    "My Legal Services",
+                    "13109175770942000130",
+                    "2nd Floor, 33 Cavendish Square, London W1G 0PW",
+                    false
+                ],
+                [
+                    11,
+                    "Sterling Law Solicitors",
+                    "7600599365587011215",
+                    "Temple Chambers, 3-7 Temple Avenue, Temple, London EC4Y 0DT",
+                    false
+                ]
+            ],
+            "seoScore": [
+                [
+                    "South Westminster Legal Advice Centre",
+                    93.41
+                ],
+                [
+                    "William Sturges LLP Solicitors",
+                    97.07
+                ],
+                [
+                    "Barnes Solicitors",
+                    93.41
+                ],
+                [
+                    "CASTELO SOLICITORS",
+                    93.41
+                ]
+            ],
+            "healthScore": 19.191501226486146
+        }
+    }
+}

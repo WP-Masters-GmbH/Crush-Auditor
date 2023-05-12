@@ -1,0 +1,2518 @@
+{
+    "createdAt": "2022-12-18T08:26:12.690Z",
+    "updatedAt": "2022-12-18T08:27:31.604Z",
+    "id": "639ecea439075253c7eb6d93",
+    "userId": "635fcefdb3ee5d82c16f95e4",
+    "competitorsListId": "638dcb8c11354b95cee9cafe",
+    "pitchDeckId": null,
+    "isShared": true,
+    "refreshedDate": "2022-12-05T10:44:28.545Z",
+    "data": {
+        "keyword": "block paving layer",
+        "device": "desktop",
+        "location": {
+            "address": "03 Gloucester Rd, Trowbridge BA14 0AD",
+            "latitude": "51.507321899999994",
+            "longitude": "-0.12764739999999997"
+        },
+        "mark": 64,
+        "competitors": [
+            {
+                "name": "London Landscape & Driveway Team",
+                "isClaimed": true,
+                "id": "638dcb8c11354b95cee9cab2"
+            },
+            {
+                "name": "Diamond Driveways",
+                "isClaimed": true,
+                "id": "638dcb8c11354b95cee9cab3"
+            },
+            {
+                "name": "City Pave",
+                "isClaimed": false,
+                "id": "638dcb8c11354b95cee9cab4"
+            }
+        ],
+        "statistics": {
+            "average": {
+                "statistic": [
+                    100,
+                    18.75,
+                    100,
+                    71.14427860696517,
+                    65.78444620474347,
+                    29.508196721311478
+                ]
+            },
+            "categories": {
+                "business": {
+                    "name": "C & K Landscaping",
+                    "categories": [
+                        "Asphalt contractor",
+                        "Concrete contractor",
+                        "Fence contractor",
+                        "Garden building supplier",
+                        "Landscaper"
+                    ],
+                    "primaryCategories": [
+                        "Paving contractor"
+                    ]
+                },
+                "competitorsCategories": [
+                    {
+                        "name": "London Landscape & Driveway Team",
+                        "categories": [
+                            "Bricklayer",
+                            "Gardener",
+                            "Landscape architect",
+                            "Landscaper",
+                            "Patio enclosure supplier",
+                            "Paving contractor"
+                        ],
+                        "primaryCategories": [
+                            "Landscape designer"
+                        ]
+                    },
+                    {
+                        "name": "Diamond Driveways",
+                        "categories": [],
+                        "primaryCategories": [
+                            "Paving contractor"
+                        ]
+                    },
+                    {
+                        "name": "City Pave",
+                        "categories": [],
+                        "primaryCategories": [
+                            "Paving contractor"
+                        ]
+                    }
+                ],
+                "notIncludedCategories": {
+                    "categories": [
+                        "Bricklayer",
+                        "Gardener",
+                        "Landscape architect",
+                        "Patio enclosure supplier"
+                    ],
+                    "primaryCategories": [
+                        "Landscape designer"
+                    ]
+                },
+                "suggestion": {
+                    "categories": [
+                        "Paving contractor",
+                        "Bricklayer",
+                        "Gardener",
+                        "Landscape architect",
+                        "Landscaper"
+                    ],
+                    "primaryCategories": [
+                        "Landscape designer"
+                    ]
+                }
+            },
+            "postsTotal": {
+                "statistic": [
+                    [
+                        "C & K Landscaping",
+                        1
+                    ],
+                    [
+                        "London Landscape & Driveway Team",
+                        0
+                    ],
+                    [
+                        "Diamond Driveways",
+                        16
+                    ],
+                    [
+                        "City Pave",
+                        0
+                    ]
+                ],
+                "messages": [
+                    "London Landscape & Driveway Team had no post activities across the past 90 days",
+                    "City Pave had no post activities across the past 90 days"
+                ]
+            },
+            "postsDates": {
+                "statistic": [
+                    "2022-11-24T00:00:00.000Z",
+                    "2022-11-17T00:00:00.000Z",
+                    "2022-11-03T00:00:00.000Z",
+                    "2022-10-27T00:00:00.000Z",
+                    "2022-10-20T00:00:00.000Z",
+                    "2022-10-16T00:00:00.000Z",
+                    "2022-10-13T00:00:00.000Z",
+                    "2022-10-09T00:00:00.000Z",
+                    "2022-10-06T00:00:00.000Z",
+                    "2022-10-03T00:00:00.000Z",
+                    "2022-09-29T00:00:00.000Z",
+                    "2022-09-27T00:00:00.000Z",
+                    "2022-09-22T00:00:00.000Z",
+                    "2022-10-15T00:00:00.000Z"
+                ],
+                "labels": [
+                    "2022-09-22T00:00:00.000Z",
+                    "2022-09-23T00:00:00.000Z",
+                    "2022-09-24T00:00:00.000Z",
+                    "2022-09-25T00:00:00.000Z",
+                    "2022-09-26T00:00:00.000Z",
+                    "2022-09-27T00:00:00.000Z",
+                    "2022-09-28T00:00:00.000Z",
+                    "2022-09-29T00:00:00.000Z",
+                    "2022-09-30T00:00:00.000Z",
+                    "2022-10-01T00:00:00.000Z",
+                    "2022-10-02T00:00:00.000Z",
+                    "2022-10-03T00:00:00.000Z",
+                    "2022-10-04T00:00:00.000Z",
+                    "2022-10-05T00:00:00.000Z",
+                    "2022-10-06T00:00:00.000Z",
+                    "2022-10-07T00:00:00.000Z",
+                    "2022-10-08T00:00:00.000Z",
+                    "2022-10-09T00:00:00.000Z",
+                    "2022-10-10T00:00:00.000Z",
+                    "2022-10-11T00:00:00.000Z",
+                    "2022-10-12T00:00:00.000Z",
+                    "2022-10-13T00:00:00.000Z",
+                    "2022-10-14T00:00:00.000Z",
+                    "2022-10-15T00:00:00.000Z",
+                    "2022-10-16T00:00:00.000Z",
+                    "2022-10-17T00:00:00.000Z",
+                    "2022-10-18T00:00:00.000Z",
+                    "2022-10-19T00:00:00.000Z",
+                    "2022-10-20T00:00:00.000Z",
+                    "2022-10-21T00:00:00.000Z",
+                    "2022-10-22T00:00:00.000Z",
+                    "2022-10-23T00:00:00.000Z",
+                    "2022-10-24T00:00:00.000Z",
+                    "2022-10-25T00:00:00.000Z",
+                    "2022-10-26T00:00:00.000Z",
+                    "2022-10-27T00:00:00.000Z",
+                    "2022-10-28T00:00:00.000Z",
+                    "2022-10-29T00:00:00.000Z",
+                    "2022-10-30T00:00:00.000Z",
+                    "2022-10-31T00:00:00.000Z",
+                    "2022-11-01T00:00:00.000Z",
+                    "2022-11-02T00:00:00.000Z",
+                    "2022-11-03T00:00:00.000Z",
+                    "2022-11-04T00:00:00.000Z",
+                    "2022-11-05T00:00:00.000Z",
+                    "2022-11-06T00:00:00.000Z",
+                    "2022-11-07T00:00:00.000Z",
+                    "2022-11-08T00:00:00.000Z",
+                    "2022-11-09T00:00:00.000Z",
+                    "2022-11-10T00:00:00.000Z",
+                    "2022-11-11T00:00:00.000Z",
+                    "2022-11-12T00:00:00.000Z",
+                    "2022-11-13T00:00:00.000Z",
+                    "2022-11-14T00:00:00.000Z",
+                    "2022-11-15T00:00:00.000Z",
+                    "2022-11-16T00:00:00.000Z",
+                    "2022-11-17T00:00:00.000Z",
+                    "2022-11-18T00:00:00.000Z",
+                    "2022-11-19T00:00:00.000Z",
+                    "2022-11-20T00:00:00.000Z",
+                    "2022-11-21T00:00:00.000Z",
+                    "2022-11-22T00:00:00.000Z",
+                    "2022-11-23T00:00:00.000Z",
+                    "2022-11-24T00:00:00.000Z"
+                ],
+                "businessDatesStatistic": [
+                    "C & K Landscaping",
+                    [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                ],
+                "competitorDatesStatistic": [
+                    [
+                        "London Landscape & Driveway Team",
+                        [
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ]
+                    ],
+                    [
+                        "Diamond Driveways",
+                        [
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            1,
+                            0,
+                            1,
+                            0,
+                            0,
+                            0,
+                            1,
+                            0,
+                            0,
+                            1,
+                            0,
+                            0,
+                            1,
+                            0,
+                            0,
+                            0,
+                            1,
+                            0,
+                            0,
+                            1,
+                            0,
+                            0,
+                            0,
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            1
+                        ]
+                    ],
+                    [
+                        "City Pave",
+                        [
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ]
+                    ]
+                ],
+                "businessDaySequence": [
+                    "C & K Landscaping",
+                    [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1
+                    ]
+                ],
+                "competitorsDaysSequence": [
+                    [
+                        "London Landscape & Driveway Team",
+                        [
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ]
+                    ],
+                    [
+                        "Diamond Driveways",
+                        [
+                            1,
+                            3,
+                            3,
+                            1,
+                            3,
+                            1,
+                            0
+                        ]
+                    ],
+                    [
+                        "City Pave",
+                        [
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ]
+                    ]
+                ],
+                "sequenceLabels": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    6,
+                    13,
+                    22
+                ],
+                "postFrequency": [
+                    [
+                        "C & K Landscaping",
+                        "Every 90 days"
+                    ],
+                    [
+                        "London Landscape & Driveway Team",
+                        "No post statistic"
+                    ],
+                    [
+                        "Diamond Driveways",
+                        "Every 6 days"
+                    ],
+                    [
+                        "City Pave",
+                        "No post statistic"
+                    ]
+                ]
+            },
+            "reviewsGap": {
+                "statistic": [
+                    [
+                        "C & K Landscaping",
+                        6,
+                        5
+                    ],
+                    [
+                        "London Landscape & Driveway Team",
+                        25,
+                        4.8
+                    ],
+                    [
+                        "Diamond Driveways",
+                        28,
+                        4.7
+                    ],
+                    [
+                        "City Pave",
+                        8,
+                        5
+                    ]
+                ],
+                "suggestion": [
+                    [
+                        19,
+                        "London Landscape & Driveway Team"
+                    ],
+                    [
+                        22,
+                        "Diamond Driveways"
+                    ],
+                    [
+                        2,
+                        "City Pave"
+                    ]
+                ]
+            },
+            "photosTotal": [
+                [
+                    "C & K Landscaping",
+                    60
+                ],
+                [
+                    "London Landscape & Driveway Team",
+                    441
+                ],
+                [
+                    "Diamond Driveways",
+                    427
+                ],
+                [
+                    "City Pave",
+                    14
+                ]
+            ],
+            "reviewsVelocity": {
+                "statistic": [
+                    [
+                        "C & K Landscaping",
+                        5
+                    ],
+                    [
+                        "London Landscape & Driveway Team",
+                        11
+                    ],
+                    [
+                        "Diamond Driveways",
+                        9
+                    ],
+                    [
+                        "City Pave",
+                        3
+                    ]
+                ]
+            },
+            "geoGridReports": [],
+            "rankRating": [
+                [
+                    0,
+                    "C & K Landscaping",
+                    "12084243359021068232",
+                    "103 Gloucester Rd, Trowbridge BA14 0AD, United Kingdom",
+                    true
+                ],
+                [
+                    1,
+                    "London Landscape & Driveway Team",
+                    "18394974073077067674",
+                    "Lavender Ave, Mitcham CR4 3HH, United Kingdom",
+                    true
+                ],
+                [
+                    2,
+                    "Diamond Driveways",
+                    "16905573808334583031",
+                    "Langston Rd, Loughton IG10 3TQ, United Kingdom",
+                    true
+                ],
+                [
+                    3,
+                    "City Pave",
+                    "13141435363484106143",
+                    "118 Court Rd, London SE9 4EW, United Kingdom",
+                    true
+                ],
+                [
+                    5,
+                    "Safeway Driveways",
+                    "8055088112558661963",
+                    "Causeway House, 13 The Causeway, Teddington TW11 0JR",
+                    false
+                ],
+                [
+                    6,
+                    "SE Landscape Construction Ltd",
+                    "7963180549949957267",
+                    "15 Maple Dr, Chelmsford CM2 9HP",
+                    false
+                ],
+                [
+                    7,
+                    "WH Drives & Designs",
+                    "9567813494179045988",
+                    "Hoofprints, Lye Ln, Bricket Wood, St Albans AL2 3TW",
+                    false
+                ],
+                [
+                    8,
+                    "Stonepave Drives and Patios Ltd",
+                    "4459217660259141084",
+                    "2 Clarendon Rd, Ashford TW15 2QE",
+                    false
+                ],
+                [
+                    9,
+                    "Kirkby Paving Ltd",
+                    "15695809141012464245",
+                    "no data",
+                    false
+                ],
+                [
+                    10,
+                    "Oxfordshire Paving LTD",
+                    "6937559146515094242",
+                    "no data",
+                    false
+                ]
+            ],
+            "keywords": {
+                "statistic": [
+                    [
+                        "C & K Landscaping",
+                        0,
+                        17,
+                        0,
+                        744
+                    ],
+                    [
+                        "London Landscape & Driveway Team",
+                        0,
+                        32,
+                        0,
+                        56
+                    ],
+                    [
+                        "Diamond Driveways",
+                        0,
+                        17,
+                        0,
+                        458
+                    ],
+                    [
+                        "City Pave",
+                        0,
+                        9,
+                        0,
+                        0
+                    ]
+                ],
+                "suggestion": [
+                    15,
+                    null
+                ],
+                "keywords": []
+            },
+            "keywordDensity": {
+                "businessName": "C & K Landscaping",
+                "competitorName": "London Landscape & Driveway Team",
+                "businessDescription": "In the business for over twenty years, C & K Landscaping provides hard landscaping, driveways, block paving, paving contractors and surfacing within 50 miles of Trowbridge, Wiltshire.\nWe are have diggers from 1.5t to 3.5t and can haul away 5 ton of dig-out in one trip, saving costs to us which are passed on to the customer.\n\nWe have an excellent reputation with many dozens of satisfied customers, including some repeat ones who have moved to a new house and need more work done.\n\nPatios, paths, driveways, moving earth around, building retaining walls, laying foundations, and these days even home/garden offices.\nEverything that requires the skills of a builder or associated trades we can do.\n\nBlock paving, tarmacing, gravel, resin bound.",
+                "competitorDescription": "Driveway installation company & landscape design & build",
+                "businessWordCount": 124,
+                "competitorWordCount": 8,
+                "businessKeywordDensity": {
+                    "paving": {
+                        "percent": 2,
+                        "count": 3
+                    },
+                    "have": {
+                        "percent": 2,
+                        "count": 3
+                    },
+                    "landscaping": {
+                        "percent": 2,
+                        "count": 2
+                    },
+                    "driveways": {
+                        "percent": 2,
+                        "count": 2
+                    },
+                    "block": {
+                        "percent": 2,
+                        "count": 2
+                    },
+                    "5t": {
+                        "percent": 2,
+                        "count": 2
+                    },
+                    "can": {
+                        "percent": 2,
+                        "count": 2
+                    },
+                    "business": {
+                        "percent": 1,
+                        "count": 1
+                    },
+                    "over": {
+                        "percent": 1,
+                        "count": 1
+                    },
+                    "twenty": {
+                        "percent": 1,
+                        "count": 1
+                    },
+                    "years": {
+                        "percent": 1,
+                        "count": 1
+                    },
+                    "provides": {
+                        "percent": 1,
+                        "count": 1
+                    },
+                    "hard": {
+                        "percent": 1,
+                        "count": 1
+                    },
+                    "contractors": {
+                        "percent": 1,
+                        "count": 1
+                    },
+                    "surfacing": {
+                        "percent": 1,
+                        "count": 1
+                    },
+                    "within": {
+                        "percent": 1,
+                        "count": 1
+                    },
+                    "miles": {
+                        "percent": 1,
+                        "count": 1
+                    },
+                    "trowbridge": {
+                        "percent": 1,
+                        "count": 1
+                    },
+                    "wiltshire": {
+                        "percent": 1,
+                        "count": 1
+                    },
+                    "diggers": {
+                        "percent": 1,
+                        "count": 1
+                    },
+                    "haul": {
+                        "percent": 1,
+                        "count": 1
+                    },
+                    "away": {
+                        "percent": 1,
+                        "count": 1
+                    },
+                    "ton": {
+                        "percent": 1,
+                        "count": 1
+                    },
+                    "dig-out": {
+                        "percent": 1,
+                        "count": 1
+                    },
+                    "one": {
+                        "percent": 1,
+                        "count": 1
+                    },
+                    "trip": {
+                        "percent": 1,
+                        "count": 1
+                    },
+                    "saving": {
+                        "percent": 1,
+                        "count": 1
+                    },
+                    "costs": {
+                        "percent": 1,
+                        "count": 1
+                    },
+                    "us": {
+                        "percent": 1,
+                        "count": 1
+                    },
+                    "passed": {
+                        "percent": 1,
+                        "count": 1
+                    },
+                    "customer": {
+                        "percent": 1,
+                        "count": 1
+                    },
+                    "excellent": {
+                        "percent": 1,
+                        "count": 1
+                    },
+                    "reputation": {
+                        "percent": 1,
+                        "count": 1
+                    },
+                    "many": {
+                        "percent": 1,
+                        "count": 1
+                    },
+                    "dozens": {
+                        "percent": 1,
+                        "count": 1
+                    },
+                    "satisfied": {
+                        "percent": 1,
+                        "count": 1
+                    },
+                    "customers": {
+                        "percent": 1,
+                        "count": 1
+                    },
+                    "including": {
+                        "percent": 1,
+                        "count": 1
+                    },
+                    "some": {
+                        "percent": 1,
+                        "count": 1
+                    },
+                    "repeat": {
+                        "percent": 1,
+                        "count": 1
+                    },
+                    "ones": {
+                        "percent": 1,
+                        "count": 1
+                    },
+                    "moved": {
+                        "percent": 1,
+                        "count": 1
+                    },
+                    "new": {
+                        "percent": 1,
+                        "count": 1
+                    },
+                    "house": {
+                        "percent": 1,
+                        "count": 1
+                    },
+                    "need": {
+                        "percent": 1,
+                        "count": 1
+                    },
+                    "more": {
+                        "percent": 1,
+                        "count": 1
+                    },
+                    "work": {
+                        "percent": 1,
+                        "count": 1
+                    },
+                    "done": {
+                        "percent": 1,
+                        "count": 1
+                    },
+                    "patios": {
+                        "percent": 1,
+                        "count": 1
+                    },
+                    "paths": {
+                        "percent": 1,
+                        "count": 1
+                    },
+                    "moving": {
+                        "percent": 1,
+                        "count": 1
+                    },
+                    "earth": {
+                        "percent": 1,
+                        "count": 1
+                    },
+                    "around": {
+                        "percent": 1,
+                        "count": 1
+                    },
+                    "building": {
+                        "percent": 1,
+                        "count": 1
+                    },
+                    "retaining": {
+                        "percent": 1,
+                        "count": 1
+                    },
+                    "walls": {
+                        "percent": 1,
+                        "count": 1
+                    },
+                    "laying": {
+                        "percent": 1,
+                        "count": 1
+                    },
+                    "foundations": {
+                        "percent": 1,
+                        "count": 1
+                    },
+                    "days": {
+                        "percent": 1,
+                        "count": 1
+                    },
+                    "home": {
+                        "percent": 1,
+                        "count": 1
+                    },
+                    "garden": {
+                        "percent": 1,
+                        "count": 1
+                    },
+                    "offices": {
+                        "percent": 1,
+                        "count": 1
+                    },
+                    "requires": {
+                        "percent": 1,
+                        "count": 1
+                    },
+                    "skills": {
+                        "percent": 1,
+                        "count": 1
+                    },
+                    "builder": {
+                        "percent": 1,
+                        "count": 1
+                    },
+                    "associated": {
+                        "percent": 1,
+                        "count": 1
+                    },
+                    "trades": {
+                        "percent": 1,
+                        "count": 1
+                    },
+                    "do": {
+                        "percent": 1,
+                        "count": 1
+                    },
+                    "tarmacing": {
+                        "percent": 1,
+                        "count": 1
+                    },
+                    "gravel": {
+                        "percent": 1,
+                        "count": 1
+                    },
+                    "resin": {
+                        "percent": 1,
+                        "count": 1
+                    },
+                    "bound": {
+                        "percent": 1,
+                        "count": 1
+                    }
+                },
+                "competitorKeywordDensity": {
+                    "driveway": {
+                        "percent": 13,
+                        "count": 1,
+                        "comparing": "lower"
+                    },
+                    "installation": {
+                        "percent": 13,
+                        "count": 1,
+                        "comparing": "lower"
+                    },
+                    "company": {
+                        "percent": 13,
+                        "count": 1,
+                        "comparing": "lower"
+                    },
+                    "landscape": {
+                        "percent": 13,
+                        "count": 1,
+                        "comparing": "lower"
+                    },
+                    "design": {
+                        "percent": 13,
+                        "count": 1,
+                        "comparing": "lower"
+                    },
+                    "build": {
+                        "percent": 13,
+                        "count": 1,
+                        "comparing": "lower"
+                    }
+                }
+            },
+            "descriptionCountStatistic": {
+                "statistic": [
+                    [
+                        "C & K Landscaping",
+                        124
+                    ],
+                    [
+                        "London Landscape & Driveway Team",
+                        8
+                    ],
+                    [
+                        "Diamond Driveways",
+                        68
+                    ],
+                    [
+                        "City Pave",
+                        0
+                    ]
+                ]
+            },
+            "brandScore": {
+                "statistic": [
+                    [
+                        "C & K Landscaping",
+                        47.06
+                    ],
+                    [
+                        "London Landscape & Driveway Team",
+                        58.75
+                    ],
+                    [
+                        "Diamond Driveways",
+                        95.19
+                    ],
+                    [
+                        "City Pave",
+                        60.67
+                    ]
+                ]
+            },
+            "zipStatistic": {
+                "zipCodes": [
+                    [
+                        "C & K Landscaping",
+                        "103 Gloucester Rd, Trowbridge BA14 0AD, United Kingdom",
+                        "BA14 0AD"
+                    ],
+                    [
+                        "London Landscape & Driveway Team",
+                        "Lavender Ave, Mitcham CR4 3HH, United Kingdom",
+                        "CR4 3HH"
+                    ],
+                    [
+                        "Diamond Driveways",
+                        "Langston Rd, Loughton IG10 3TQ, United Kingdom",
+                        "IG10 3TQ"
+                    ],
+                    [
+                        "City Pave",
+                        "118 Court Rd, London SE9 4EW, United Kingdom",
+                        "SE9 4EW"
+                    ],
+                    [
+                        "Safeway Driveways",
+                        "Causeway House, 13 The Causeway, Teddington TW11 0JR",
+                        "TW11 0JR"
+                    ],
+                    [
+                        "SE Landscape Construction Ltd",
+                        "15 Maple Dr, Chelmsford CM2 9HP",
+                        "CM2 9HP"
+                    ],
+                    [
+                        "WH Drives & Designs",
+                        "Hoofprints, Lye Ln, Bricket Wood, St Albans AL2 3TW",
+                        "AL2 3TW"
+                    ],
+                    [
+                        "Stonepave Drives and Patios Ltd",
+                        "2 Clarendon Rd, Ashford TW15 2QE",
+                        "TW15 2QE"
+                    ],
+                    [
+                        "Kirkby Paving Ltd",
+                        "No Address Data",
+                        "No Zip Data"
+                    ],
+                    [
+                        "Oxfordshire Paving LTD",
+                        "No Address Data",
+                        "No Zip Data"
+                    ]
+                ],
+                "zipCodePercentage": [
+                    [
+                        "BA14 0AD",
+                        10
+                    ],
+                    [
+                        "CR4 3HH",
+                        10
+                    ],
+                    [
+                        "IG10 3TQ",
+                        10
+                    ],
+                    [
+                        "SE9 4EW",
+                        10
+                    ],
+                    [
+                        "TW11 0JR",
+                        10
+                    ],
+                    [
+                        "CM2 9HP",
+                        10
+                    ],
+                    [
+                        "AL2 3TW",
+                        10
+                    ],
+                    [
+                        "TW15 2QE",
+                        10
+                    ],
+                    [
+                        "No Zip Data",
+                        20
+                    ]
+                ],
+                "zipDifficulty": {
+                    "code": "BA14 0AD",
+                    "value": 0,
+                    "maxValue": 10
+                }
+            },
+            "sitelink": {
+                "siteLinks": [
+                    [
+                        "C & K Landscaping",
+                        "https://wiltshiredriveways.co.uk/?utm_source=GMB+naturals&utm_medium=gmb&utm_campaign=GMB+source"
+                    ],
+                    [
+                        "London Landscape & Driveway Team",
+                        "https://londonlandscapesanddriveways.co.uk/"
+                    ],
+                    [
+                        "Diamond Driveways",
+                        "https://diamonddriveways.co.uk/"
+                    ],
+                    [
+                        "City Pave",
+                        "http://citypave.co.uk/"
+                    ]
+                ],
+                "sitelinkAuthorityScore": [
+                    [
+                        "C & K Landscaping",
+                        76.58
+                    ],
+                    [
+                        "London Landscape & Driveway Team",
+                        28.36
+                    ],
+                    [
+                        "Diamond Driveways",
+                        95.21
+                    ],
+                    [
+                        "City Pave",
+                        33.18
+                    ]
+                ],
+                "pageSpeed": [
+                    [
+                        "C & K Landscaping",
+                        206
+                    ],
+                    [
+                        "London Landscape & Driveway Team",
+                        198
+                    ],
+                    [
+                        "Diamond Driveways",
+                        97
+                    ],
+                    [
+                        "City Pave",
+                        92
+                    ]
+                ],
+                "indexedPages": [
+                    [
+                        "C & K Landscaping",
+                        9
+                    ],
+                    [
+                        "London Landscape & Driveway Team",
+                        8
+                    ],
+                    [
+                        "Diamond Driveways",
+                        142
+                    ],
+                    [
+                        "City Pave",
+                        51
+                    ]
+                ],
+                "backlinks": [
+                    [
+                        "C & K Landscaping",
+                        335
+                    ],
+                    [
+                        "London Landscape & Driveway Team",
+                        20
+                    ],
+                    [
+                        "Diamond Driveways",
+                        280
+                    ],
+                    [
+                        "City Pave",
+                        3
+                    ]
+                ],
+                "referringDomains": [
+                    [
+                        "C & K Landscaping",
+                        110
+                    ],
+                    [
+                        "London Landscape & Driveway Team",
+                        2
+                    ],
+                    [
+                        "Diamond Driveways",
+                        107
+                    ],
+                    [
+                        "City Pave",
+                        1
+                    ]
+                ],
+                "messages": [],
+                "domainRank": [
+                    [
+                        "C & K Landscaping",
+                        262
+                    ],
+                    [
+                        "London Landscape & Driveway Team",
+                        0
+                    ],
+                    [
+                        "Diamond Driveways",
+                        159
+                    ],
+                    [
+                        "City Pave",
+                        0
+                    ]
+                ]
+            },
+            "summary10": {
+                "primaryCategories": [
+                    [
+                        "Paving contractor",
+                        8
+                    ],
+                    [
+                        "Landscape designer",
+                        1
+                    ]
+                ],
+                "reviewsAmount": 38,
+                "rating": 4.7,
+                "zipCodes": [
+                    [
+                        "CR4 3HH",
+                        1
+                    ],
+                    [
+                        "IG10 3TQ",
+                        1
+                    ],
+                    [
+                        "SE9 4EW",
+                        1
+                    ],
+                    [
+                        "TW11 0JR",
+                        1
+                    ],
+                    [
+                        "CM2 9HP",
+                        1
+                    ],
+                    [
+                        "AL2 3TW",
+                        1
+                    ],
+                    [
+                        "TW15 2QE",
+                        1
+                    ]
+                ]
+            },
+            "summary3": {
+                "countAdditionalCategories": 2,
+                "reviewVelocity": 8,
+                "photoCount": 294,
+                "postCount": 5,
+                "keywordsInTitle": 0,
+                "titleLength": 19,
+                "descriptionLength": 25,
+                "pageSpeed": 129,
+                "indexedPages": 67,
+                "domainRank": 53
+            },
+            "businessAttributes": [
+                {
+                    "name": "C & K Landscaping",
+                    "attributes": []
+                },
+                {
+                    "name": "London Landscape & Driveway Team",
+                    "attributes": [],
+                    "missingAttributes": []
+                },
+                {
+                    "name": "Diamond Driveways",
+                    "attributes": [],
+                    "missingAttributes": [
+                        "Offers Online Estimates",
+                        "Has Onsite Services",
+                        "Requires Appointments"
+                    ]
+                },
+                {
+                    "name": "City Pave",
+                    "attributes": [],
+                    "missingAttributes": []
+                }
+            ],
+            "keywordsData": [
+                {
+                    "keyword": "landscaping services",
+                    "location_code": null,
+                    "language_code": null,
+                    "search_partners": false,
+                    "competition": "LOW",
+                    "competition_index": 23,
+                    "search_volume": 27100,
+                    "low_top_of_page_bid": 1.78,
+                    "high_top_of_page_bid": 9.64,
+                    "monthly_searches": [
+                        {
+                            "year": 2022,
+                            "month": 11,
+                            "search_volume": 18100
+                        },
+                        {
+                            "year": 2022,
+                            "month": 10,
+                            "search_volume": 22200
+                        },
+                        {
+                            "year": 2022,
+                            "month": 9,
+                            "search_volume": 22200
+                        },
+                        {
+                            "year": 2022,
+                            "month": 8,
+                            "search_volume": 27100
+                        },
+                        {
+                            "year": 2022,
+                            "month": 7,
+                            "search_volume": 27100
+                        },
+                        {
+                            "year": 2022,
+                            "month": 6,
+                            "search_volume": 33100
+                        },
+                        {
+                            "year": 2022,
+                            "month": 5,
+                            "search_volume": 40500
+                        },
+                        {
+                            "year": 2022,
+                            "month": 4,
+                            "search_volume": 40500
+                        },
+                        {
+                            "year": 2022,
+                            "month": 3,
+                            "search_volume": 33100
+                        },
+                        {
+                            "year": 2022,
+                            "month": 2,
+                            "search_volume": 22200
+                        },
+                        {
+                            "year": 2022,
+                            "month": 1,
+                            "search_volume": 22200
+                        },
+                        {
+                            "year": 2021,
+                            "month": 12,
+                            "search_volume": 14800
+                        }
+                    ],
+                    "keyword_annotations": {
+                        "concepts": [
+                            {
+                                "name": "landscaping",
+                                "concept_group": {
+                                    "name": "Improvement",
+                                    "type": null
+                                }
+                            },
+                            {
+                                "name": "Non-Brands",
+                                "concept_group": {
+                                    "name": "Non-Brands",
+                                    "type": "NON_BRAND"
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "keyword": "garden paving",
+                    "location_code": null,
+                    "language_code": null,
+                    "search_partners": false,
+                    "competition": "HIGH",
+                    "competition_index": 100,
+                    "search_volume": 12100,
+                    "low_top_of_page_bid": 0.41,
+                    "high_top_of_page_bid": 2.86,
+                    "monthly_searches": [
+                        {
+                            "year": 2022,
+                            "month": 11,
+                            "search_volume": 6600
+                        },
+                        {
+                            "year": 2022,
+                            "month": 10,
+                            "search_volume": 8100
+                        },
+                        {
+                            "year": 2022,
+                            "month": 9,
+                            "search_volume": 9900
+                        },
+                        {
+                            "year": 2022,
+                            "month": 8,
+                            "search_volume": 12100
+                        },
+                        {
+                            "year": 2022,
+                            "month": 7,
+                            "search_volume": 12100
+                        },
+                        {
+                            "year": 2022,
+                            "month": 6,
+                            "search_volume": 14800
+                        },
+                        {
+                            "year": 2022,
+                            "month": 5,
+                            "search_volume": 18100
+                        },
+                        {
+                            "year": 2022,
+                            "month": 4,
+                            "search_volume": 18100
+                        },
+                        {
+                            "year": 2022,
+                            "month": 3,
+                            "search_volume": 14800
+                        },
+                        {
+                            "year": 2022,
+                            "month": 2,
+                            "search_volume": 9900
+                        },
+                        {
+                            "year": 2022,
+                            "month": 1,
+                            "search_volume": 9900
+                        },
+                        {
+                            "year": 2021,
+                            "month": 12,
+                            "search_volume": 5400
+                        }
+                    ],
+                    "keyword_annotations": {
+                        "concepts": [
+                            {
+                                "name": "paving",
+                                "concept_group": {
+                                    "name": "Improvement",
+                                    "type": null
+                                }
+                            },
+                            {
+                                "name": "Non-Brands",
+                                "concept_group": {
+                                    "name": "Non-Brands",
+                                    "type": "NON_BRAND"
+                                }
+                            },
+                            {
+                                "name": "patio",
+                                "concept_group": {
+                                    "name": "Surface",
+                                    "type": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "keyword": "patio paving",
+                    "location_code": null,
+                    "language_code": null,
+                    "search_partners": false,
+                    "competition": "HIGH",
+                    "competition_index": 100,
+                    "search_volume": 60500,
+                    "low_top_of_page_bid": 1.13,
+                    "high_top_of_page_bid": 6.32,
+                    "monthly_searches": [
+                        {
+                            "year": 2022,
+                            "month": 11,
+                            "search_volume": 27100
+                        },
+                        {
+                            "year": 2022,
+                            "month": 10,
+                            "search_volume": 40500
+                        },
+                        {
+                            "year": 2022,
+                            "month": 9,
+                            "search_volume": 49500
+                        },
+                        {
+                            "year": 2022,
+                            "month": 8,
+                            "search_volume": 74000
+                        },
+                        {
+                            "year": 2022,
+                            "month": 7,
+                            "search_volume": 90500
+                        },
+                        {
+                            "year": 2022,
+                            "month": 6,
+                            "search_volume": 90500
+                        },
+                        {
+                            "year": 2022,
+                            "month": 5,
+                            "search_volume": 135000
+                        },
+                        {
+                            "year": 2022,
+                            "month": 4,
+                            "search_volume": 110000
+                        },
+                        {
+                            "year": 2022,
+                            "month": 3,
+                            "search_volume": 90500
+                        },
+                        {
+                            "year": 2022,
+                            "month": 2,
+                            "search_volume": 40500
+                        },
+                        {
+                            "year": 2022,
+                            "month": 1,
+                            "search_volume": 33100
+                        },
+                        {
+                            "year": 2021,
+                            "month": 12,
+                            "search_volume": 27100
+                        }
+                    ],
+                    "keyword_annotations": {
+                        "concepts": [
+                            {
+                                "name": "paving",
+                                "concept_group": {
+                                    "name": "Improvement",
+                                    "type": null
+                                }
+                            },
+                            {
+                                "name": "Non-Brands",
+                                "concept_group": {
+                                    "name": "Non-Brands",
+                                    "type": "NON_BRAND"
+                                }
+                            },
+                            {
+                                "name": "patio",
+                                "concept_group": {
+                                    "name": "Surface",
+                                    "type": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "keyword": "fencing contractor",
+                    "location_code": null,
+                    "language_code": null,
+                    "search_partners": false,
+                    "competition": "LOW",
+                    "competition_index": 11,
+                    "search_volume": 60500,
+                    "low_top_of_page_bid": 1.12,
+                    "high_top_of_page_bid": 6.41,
+                    "monthly_searches": [
+                        {
+                            "year": 2022,
+                            "month": 11,
+                            "search_volume": 49500
+                        },
+                        {
+                            "year": 2022,
+                            "month": 10,
+                            "search_volume": 60500
+                        },
+                        {
+                            "year": 2022,
+                            "month": 9,
+                            "search_volume": 74000
+                        },
+                        {
+                            "year": 2022,
+                            "month": 8,
+                            "search_volume": 60500
+                        },
+                        {
+                            "year": 2022,
+                            "month": 7,
+                            "search_volume": 49500
+                        },
+                        {
+                            "year": 2022,
+                            "month": 6,
+                            "search_volume": 60500
+                        },
+                        {
+                            "year": 2022,
+                            "month": 5,
+                            "search_volume": 60500
+                        },
+                        {
+                            "year": 2022,
+                            "month": 4,
+                            "search_volume": 74000
+                        },
+                        {
+                            "year": 2022,
+                            "month": 3,
+                            "search_volume": 60500
+                        },
+                        {
+                            "year": 2022,
+                            "month": 2,
+                            "search_volume": 40500
+                        },
+                        {
+                            "year": 2022,
+                            "month": 1,
+                            "search_volume": 33100
+                        },
+                        {
+                            "year": 2021,
+                            "month": 12,
+                            "search_volume": 33100
+                        }
+                    ],
+                    "keyword_annotations": {
+                        "concepts": [
+                            {
+                                "name": "Non-Brands",
+                                "concept_group": {
+                                    "name": "Non-Brands",
+                                    "type": "NON_BRAND"
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "keyword": "patio landscaping",
+                    "location_code": null,
+                    "language_code": null,
+                    "search_partners": false,
+                    "competition": "HIGH",
+                    "competition_index": 90,
+                    "search_volume": 3600,
+                    "low_top_of_page_bid": 1.26,
+                    "high_top_of_page_bid": 5.74,
+                    "monthly_searches": [
+                        {
+                            "year": 2022,
+                            "month": 11,
+                            "search_volume": 1600
+                        },
+                        {
+                            "year": 2022,
+                            "month": 10,
+                            "search_volume": 1900
+                        },
+                        {
+                            "year": 2022,
+                            "month": 9,
+                            "search_volume": 2900
+                        },
+                        {
+                            "year": 2022,
+                            "month": 8,
+                            "search_volume": 3600
+                        },
+                        {
+                            "year": 2022,
+                            "month": 7,
+                            "search_volume": 4400
+                        },
+                        {
+                            "year": 2022,
+                            "month": 6,
+                            "search_volume": 4400
+                        },
+                        {
+                            "year": 2022,
+                            "month": 5,
+                            "search_volume": 6600
+                        },
+                        {
+                            "year": 2022,
+                            "month": 4,
+                            "search_volume": 5400
+                        },
+                        {
+                            "year": 2022,
+                            "month": 3,
+                            "search_volume": 4400
+                        },
+                        {
+                            "year": 2022,
+                            "month": 2,
+                            "search_volume": 2400
+                        },
+                        {
+                            "year": 2022,
+                            "month": 1,
+                            "search_volume": 2400
+                        },
+                        {
+                            "year": 2021,
+                            "month": 12,
+                            "search_volume": 1600
+                        }
+                    ],
+                    "keyword_annotations": {
+                        "concepts": [
+                            {
+                                "name": "landscaping",
+                                "concept_group": {
+                                    "name": "Improvement",
+                                    "type": null
+                                }
+                            },
+                            {
+                                "name": "Non-Brands",
+                                "concept_group": {
+                                    "name": "Non-Brands",
+                                    "type": "NON_BRAND"
+                                }
+                            },
+                            {
+                                "name": "patio",
+                                "concept_group": {
+                                    "name": "Surface",
+                                    "type": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "keyword": "landscape companies",
+                    "location_code": null,
+                    "language_code": null,
+                    "search_partners": false,
+                    "competition": "LOW",
+                    "competition_index": 19,
+                    "search_volume": 33100,
+                    "low_top_of_page_bid": 1.34,
+                    "high_top_of_page_bid": 8.67,
+                    "monthly_searches": [
+                        {
+                            "year": 2022,
+                            "month": 11,
+                            "search_volume": 22200
+                        },
+                        {
+                            "year": 2022,
+                            "month": 10,
+                            "search_volume": 27100
+                        },
+                        {
+                            "year": 2022,
+                            "month": 9,
+                            "search_volume": 27100
+                        },
+                        {
+                            "year": 2022,
+                            "month": 8,
+                            "search_volume": 33100
+                        },
+                        {
+                            "year": 2022,
+                            "month": 7,
+                            "search_volume": 27100
+                        },
+                        {
+                            "year": 2022,
+                            "month": 6,
+                            "search_volume": 33100
+                        },
+                        {
+                            "year": 2022,
+                            "month": 5,
+                            "search_volume": 40500
+                        },
+                        {
+                            "year": 2022,
+                            "month": 4,
+                            "search_volume": 40500
+                        },
+                        {
+                            "year": 2022,
+                            "month": 3,
+                            "search_volume": 33100
+                        },
+                        {
+                            "year": 2022,
+                            "month": 2,
+                            "search_volume": 27100
+                        },
+                        {
+                            "year": 2022,
+                            "month": 1,
+                            "search_volume": 22200
+                        },
+                        {
+                            "year": 2021,
+                            "month": 12,
+                            "search_volume": 18100
+                        }
+                    ],
+                    "keyword_annotations": {
+                        "concepts": [
+                            {
+                                "name": "landscaping",
+                                "concept_group": {
+                                    "name": "Improvement",
+                                    "type": null
+                                }
+                            },
+                            {
+                                "name": "Non-Brands",
+                                "concept_group": {
+                                    "name": "Non-Brands",
+                                    "type": "NON_BRAND"
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "keyword": "driveway landscaping",
+                    "location_code": null,
+                    "language_code": null,
+                    "search_partners": false,
+                    "competition": "MEDIUM",
+                    "competition_index": 58,
+                    "search_volume": 3600,
+                    "low_top_of_page_bid": 1.1,
+                    "high_top_of_page_bid": 4.14,
+                    "monthly_searches": [
+                        {
+                            "year": 2022,
+                            "month": 11,
+                            "search_volume": 1900
+                        },
+                        {
+                            "year": 2022,
+                            "month": 10,
+                            "search_volume": 2400
+                        },
+                        {
+                            "year": 2022,
+                            "month": 9,
+                            "search_volume": 3600
+                        },
+                        {
+                            "year": 2022,
+                            "month": 8,
+                            "search_volume": 3600
+                        },
+                        {
+                            "year": 2022,
+                            "month": 7,
+                            "search_volume": 3600
+                        },
+                        {
+                            "year": 2022,
+                            "month": 6,
+                            "search_volume": 4400
+                        },
+                        {
+                            "year": 2022,
+                            "month": 5,
+                            "search_volume": 6600
+                        },
+                        {
+                            "year": 2022,
+                            "month": 4,
+                            "search_volume": 5400
+                        },
+                        {
+                            "year": 2022,
+                            "month": 3,
+                            "search_volume": 4400
+                        },
+                        {
+                            "year": 2022,
+                            "month": 2,
+                            "search_volume": 2900
+                        },
+                        {
+                            "year": 2022,
+                            "month": 1,
+                            "search_volume": 2900
+                        },
+                        {
+                            "year": 2021,
+                            "month": 12,
+                            "search_volume": 1900
+                        }
+                    ],
+                    "keyword_annotations": {
+                        "concepts": [
+                            {
+                                "name": "landscaping",
+                                "concept_group": {
+                                    "name": "Improvement",
+                                    "type": null
+                                }
+                            },
+                            {
+                                "name": "Non-Brands",
+                                "concept_group": {
+                                    "name": "Non-Brands",
+                                    "type": "NON_BRAND"
+                                }
+                            },
+                            {
+                                "name": "driveway",
+                                "concept_group": {
+                                    "name": "Surface",
+                                    "type": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "keyword": "landscaping contractors",
+                    "location_code": null,
+                    "language_code": null,
+                    "search_partners": false,
+                    "competition": "MEDIUM",
+                    "competition_index": 40,
+                    "search_volume": 12100,
+                    "low_top_of_page_bid": 1.55,
+                    "high_top_of_page_bid": 8.74,
+                    "monthly_searches": [
+                        {
+                            "year": 2022,
+                            "month": 11,
+                            "search_volume": 9900
+                        },
+                        {
+                            "year": 2022,
+                            "month": 10,
+                            "search_volume": 9900
+                        },
+                        {
+                            "year": 2022,
+                            "month": 9,
+                            "search_volume": 12100
+                        },
+                        {
+                            "year": 2022,
+                            "month": 8,
+                            "search_volume": 14800
+                        },
+                        {
+                            "year": 2022,
+                            "month": 7,
+                            "search_volume": 12100
+                        },
+                        {
+                            "year": 2022,
+                            "month": 6,
+                            "search_volume": 12100
+                        },
+                        {
+                            "year": 2022,
+                            "month": 5,
+                            "search_volume": 14800
+                        },
+                        {
+                            "year": 2022,
+                            "month": 4,
+                            "search_volume": 14800
+                        },
+                        {
+                            "year": 2022,
+                            "month": 3,
+                            "search_volume": 14800
+                        },
+                        {
+                            "year": 2022,
+                            "month": 2,
+                            "search_volume": 9900
+                        },
+                        {
+                            "year": 2022,
+                            "month": 1,
+                            "search_volume": 9900
+                        },
+                        {
+                            "year": 2021,
+                            "month": 12,
+                            "search_volume": 8100
+                        }
+                    ],
+                    "keyword_annotations": {
+                        "concepts": [
+                            {
+                                "name": "landscaping",
+                                "concept_group": {
+                                    "name": "Improvement",
+                                    "type": null
+                                }
+                            },
+                            {
+                                "name": "Non-Brands",
+                                "concept_group": {
+                                    "name": "Non-Brands",
+                                    "type": "NON_BRAND"
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "keyword": "paving driveway",
+                    "location_code": null,
+                    "language_code": null,
+                    "search_partners": false,
+                    "competition": "HIGH",
+                    "competition_index": 100,
+                    "search_volume": 49500,
+                    "low_top_of_page_bid": 1.41,
+                    "high_top_of_page_bid": 8.63,
+                    "monthly_searches": [
+                        {
+                            "year": 2022,
+                            "month": 11,
+                            "search_volume": 33100
+                        },
+                        {
+                            "year": 2022,
+                            "month": 10,
+                            "search_volume": 40500
+                        },
+                        {
+                            "year": 2022,
+                            "month": 9,
+                            "search_volume": 49500
+                        },
+                        {
+                            "year": 2022,
+                            "month": 8,
+                            "search_volume": 60500
+                        },
+                        {
+                            "year": 2022,
+                            "month": 7,
+                            "search_volume": 49500
+                        },
+                        {
+                            "year": 2022,
+                            "month": 6,
+                            "search_volume": 60500
+                        },
+                        {
+                            "year": 2022,
+                            "month": 5,
+                            "search_volume": 60500
+                        },
+                        {
+                            "year": 2022,
+                            "month": 4,
+                            "search_volume": 60500
+                        },
+                        {
+                            "year": 2022,
+                            "month": 3,
+                            "search_volume": 60500
+                        },
+                        {
+                            "year": 2022,
+                            "month": 2,
+                            "search_volume": 40500
+                        },
+                        {
+                            "year": 2022,
+                            "month": 1,
+                            "search_volume": 40500
+                        },
+                        {
+                            "year": 2021,
+                            "month": 12,
+                            "search_volume": 33100
+                        }
+                    ],
+                    "keyword_annotations": {
+                        "concepts": [
+                            {
+                                "name": "paving",
+                                "concept_group": {
+                                    "name": "Improvement",
+                                    "type": null
+                                }
+                            },
+                            {
+                                "name": "Non-Brands",
+                                "concept_group": {
+                                    "name": "Non-Brands",
+                                    "type": "NON_BRAND"
+                                }
+                            },
+                            {
+                                "name": "driveway",
+                                "concept_group": {
+                                    "name": "Surface",
+                                    "type": null
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "keyword": "patio contractors",
+                    "location_code": null,
+                    "language_code": null,
+                    "search_partners": false,
+                    "competition": "LOW",
+                    "competition_index": 21,
+                    "search_volume": 2400,
+                    "low_top_of_page_bid": 2.9,
+                    "high_top_of_page_bid": 14.76,
+                    "monthly_searches": [
+                        {
+                            "year": 2022,
+                            "month": 11,
+                            "search_volume": 1300
+                        },
+                        {
+                            "year": 2022,
+                            "month": 10,
+                            "search_volume": 1900
+                        },
+                        {
+                            "year": 2022,
+                            "month": 9,
+                            "search_volume": 1900
+                        },
+                        {
+                            "year": 2022,
+                            "month": 8,
+                            "search_volume": 2900
+                        },
+                        {
+                            "year": 2022,
+                            "month": 7,
+                            "search_volume": 2400
+                        },
+                        {
+                            "year": 2022,
+                            "month": 6,
+                            "search_volume": 2900
+                        },
+                        {
+                            "year": 2022,
+                            "month": 5,
+                            "search_volume": 3600
+                        },
+                        {
+                            "year": 2022,
+                            "month": 4,
+                            "search_volume": 2900
+                        },
+                        {
+                            "year": 2022,
+                            "month": 3,
+                            "search_volume": 2900
+                        },
+                        {
+                            "year": 2022,
+                            "month": 2,
+                            "search_volume": 2400
+                        },
+                        {
+                            "year": 2022,
+                            "month": 1,
+                            "search_volume": 1900
+                        },
+                        {
+                            "year": 2021,
+                            "month": 12,
+                            "search_volume": 1300
+                        }
+                    ],
+                    "keyword_annotations": {
+                        "concepts": [
+                            {
+                                "name": "Non-Brands",
+                                "concept_group": {
+                                    "name": "Non-Brands",
+                                    "type": "NON_BRAND"
+                                }
+                            },
+                            {
+                                "name": "patio",
+                                "concept_group": {
+                                    "name": "Surface",
+                                    "type": null
+                                }
+                            }
+                        ]
+                    }
+                }
+            ],
+            "placeTopics": [
+                {
+                    "name": "C & K Landscaping",
+                    "topics": []
+                },
+                {
+                    "name": "London Landscape & Driveway Team",
+                    "topics": [],
+                    "missingTopics": [
+                        {
+                            "name": "garden",
+                            "value": 9
+                        },
+                        {
+                            "name": "job",
+                            "value": 5
+                        },
+                        {
+                            "name": "patio",
+                            "value": 5
+                        },
+                        {
+                            "name": "quote",
+                            "value": 3
+                        }
+                    ]
+                },
+                {
+                    "name": "Diamond Driveways",
+                    "topics": [],
+                    "missingTopics": [
+                        {
+                            "name": "team",
+                            "value": 11
+                        },
+                        {
+                            "name": "job",
+                            "value": 7
+                        },
+                        {
+                            "name": "company",
+                            "value": 5
+                        },
+                        {
+                            "name": "quote",
+                            "value": 4
+                        },
+                        {
+                            "name": "patio",
+                            "value": 5
+                        },
+                        {
+                            "name": "quality",
+                            "value": 4
+                        },
+                        {
+                            "name": "price",
+                            "value": 4
+                        }
+                    ]
+                },
+                {
+                    "name": "City Pave",
+                    "topics": [],
+                    "missingTopics": [
+                        {
+                            "name": "team",
+                            "value": 4
+                        }
+                    ]
+                }
+            ],
+            "workTime": {
+                "openingTime": [
+                    {
+                        "name": "C & K Landscaping",
+                        "time": {
+                            "monday": "7:30-18:00",
+                            "tuesday": "7:30-18:00",
+                            "wednesday": "7:30-18:00",
+                            "thursday": "7:30-18:00",
+                            "friday": "7:30-18:00",
+                            "saturday": "Closed",
+                            "sunday": "Closed"
+                        }
+                    },
+                    {
+                        "name": "London Landscape & Driveway Team",
+                        "time": {
+                            "monday": "Open 24 hours",
+                            "tuesday": "Open 24 hours",
+                            "wednesday": "Open 24 hours",
+                            "thursday": "Open 24 hours",
+                            "friday": "Open 24 hours",
+                            "saturday": "Open 24 hours",
+                            "sunday": "Open 24 hours"
+                        }
+                    },
+                    {
+                        "name": "Diamond Driveways",
+                        "time": {
+                            "monday": "Open 24 hours",
+                            "tuesday": "Open 24 hours",
+                            "wednesday": "Open 24 hours",
+                            "thursday": "Open 24 hours",
+                            "friday": "Open 24 hours",
+                            "saturday": "Open 24 hours",
+                            "sunday": "Open 24 hours"
+                        }
+                    },
+                    {
+                        "name": "City Pave",
+                        "time": null
+                    }
+                ]
+            },
+            "ctr": [
+                [
+                    "C & K Landscaping",
+                    "N/A"
+                ],
+                [
+                    "London Landscape & Driveway Team",
+                    39.55
+                ],
+                [
+                    "Diamond Driveways",
+                    9.29
+                ],
+                [
+                    "City Pave",
+                    5.08
+                ]
+            ]
+        }
+    },
+    "pitchDeck": null
+}

@@ -1,0 +1,30 @@
+<div class="section {{id}}">
+    <h2 class="section__title">{{title}}</h2>
+
+    <div class="cta">
+        <h3 class="cta__title">{{blur_section_text}}</h3>
+        <a class="cta__link btn" href="{{blur_section_button_url}}">{{blur_section_button_text}}</a>
+    </div>
+
+    <div class="blur">
+        <table class="table table-bordered">
+            <caption>{{table_caption}}</caption>
+            <thead>
+                <tr>
+                    {% for item in table_columns %}
+                    <th>{{item}}</th>
+                    {% endfor %}
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in table_items %}
+                <tr>
+                    <td>{{item.index}}</td>
+                    <td>{{item.name}}</td>
+                    <td>{{item.address}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>

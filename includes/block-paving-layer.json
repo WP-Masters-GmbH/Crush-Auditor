@@ -1,0 +1,234 @@
+{
+    "_id": "63b50d503bc7bd66c9dc66ef",
+    "id": "63b50d503bc7bd66c9dc66eb",
+    "createdAt": "2023-01-04T05:23:28.857Z",
+    "updatedAt": "2023-01-04T05:23:28.857Z",
+    "userId": "635fcefdb3ee5d82c16f95e4",
+    "competitorsListId": "63b50d283bc7bd66c9dc6683",
+    "isShared": false,
+    "data": {
+        "keyword": "block paving layer",
+        "device": "desktop",
+        "location": {
+            "address": "03 Gloucester Rd, Trowbridge BA14 0AD",
+            "latitude": "51.319195",
+            "longitude": "-2.204079"
+        },
+        "competitors": [
+            {
+                "name": "Drivescape ltd",
+                "isClaimed": true,
+                "id": "63b50d283bc7bd66c9dc6637"
+            },
+            {
+                "name": "A Taylor Surfacing Tarmac & Block Paving Contractor Bath & Trowbridge",
+                "isClaimed": true,
+                "id": "63b50d283bc7bd66c9dc6638"
+            },
+            {
+                "name": "SD Home Improvements - Bristol Paving, Patios & Tarmac",
+                "isClaimed": true,
+                "id": "63b50d283bc7bd66c9dc6639"
+            }
+        ],
+        "statistics": {
+            "categories": {
+                "business": {
+                    "name": "C & K Landscaping",
+                    "categories": [
+                        "Asphalt contractor",
+                        "Concrete contractor",
+                        "Fence contractor",
+                        "Garden building supplier",
+                        "Landscaper"
+                    ],
+                    "primaryCategories": [
+                        "Paving contractor"
+                    ]
+                },
+                "competitorsCategories": [
+                    {
+                        "name": "Drivescape ltd",
+                        "categories": [
+                            "Building firm",
+                            "Fence contractor",
+                            "Landscaper"
+                        ],
+                        "primaryCategories": [
+                            "Paving contractor"
+                        ]
+                    },
+                    {
+                        "name": "A Taylor Surfacing Tarmac & Block Paving Contractor Bath & Trowbridge",
+                        "categories": [
+                            "Asphalt contractor"
+                        ],
+                        "primaryCategories": [
+                            "Paving contractor"
+                        ]
+                    },
+                    {
+                        "name": "SD Home Improvements - Bristol Paving, Patios & Tarmac",
+                        "categories": [
+                            "Service establishment",
+                            "Landscaper"
+                        ],
+                        "primaryCategories": [
+                            "Paving contractor"
+                        ]
+                    }
+                ],
+                "notIncludedCategories": {
+                    "categories": [
+                        "Building firm",
+                        "Service establishment"
+                    ],
+                    "primaryCategories": []
+                },
+                "suggestion": {
+                    "categories": [
+                        "Building firm",
+                        "Fence contractor",
+                        "Landscaper",
+                        "Asphalt contractor",
+                        "Service establishment"
+                    ],
+                    "primaryCategories": [
+                        "Paving contractor"
+                    ]
+                }
+            },
+            "reviewsGap": {
+                "statistic": [
+                    [
+                        "C & K Landscaping",
+                        7,
+                        5
+                    ],
+                    [
+                        "Drivescape ltd",
+                        24,
+                        4.7
+                    ],
+                    [
+                        "A Taylor Surfacing Tarmac & Block Paving Contractor Bath & Trowbridge",
+                        3,
+                        5
+                    ],
+                    [
+                        "SD Home Improvements - Bristol Paving, Patios & Tarmac",
+                        31,
+                        5
+                    ]
+                ],
+                "suggestion": [
+                    [
+                        17,
+                        "Drivescape ltd"
+                    ],
+                    [
+                        24,
+                        "SD Home Improvements - Bristol Paving, Patios & Tarmac"
+                    ]
+                ]
+            },
+            "rankRating": [
+                [
+                    0,
+                    "C & K Landscaping",
+                    "12084243359021068232",
+                    "103 Gloucester Rd, Trowbridge BA14 0AD, United Kingdom",
+                    true
+                ],
+                [
+                    1,
+                    "Drivescape ltd",
+                    "1325736358891721434",
+                    "Littleton, Lansdown, Trowbridge BA14 6JJ, United Kingdom",
+                    true
+                ],
+                [
+                    2,
+                    "A Taylor Surfacing Tarmac & Block Paving Contractor Bath & Trowbridge",
+                    "2360184914579841883",
+                    "Farm Drynham Lane, Drynham Ln, Trowbridge BA14 0PL, United Kingdom",
+                    true
+                ],
+                [
+                    3,
+                    "SD Home Improvements - Bristol Paving, Patios & Tarmac",
+                    "4561140043773314653",
+                    "no data",
+                    true
+                ],
+                [
+                    5,
+                    "T H M Constructions Wiltshire Limited",
+                    "14932591672388508500",
+                    "Unit 7 , Frans Farm, High St, Sutton Benger, Chippenham SN15 4RL",
+                    false
+                ],
+                [
+                    6,
+                    "Ultimate Drives & Patios",
+                    "9259141378631299787",
+                    "5 The Poplars, Residential, park, Southwick, Trowbridge BA14 9NB",
+                    false
+                ],
+                [
+                    7,
+                    "Sure Set Drives & Patios",
+                    "6941026069012060620",
+                    "7 Railway Cl, Westbury BA13 3FW",
+                    false
+                ],
+                [
+                    8,
+                    "Oxfordshire Paving LTD",
+                    "6937559146515094242",
+                    "no data",
+                    false
+                ],
+                [
+                    9,
+                    "May's Driveway and Patio Co.",
+                    "1597713340035170165",
+                    "no data",
+                    false
+                ],
+                [
+                    10,
+                    "New Driveway Company",
+                    "12661832451890500888",
+                    "Unit 3, Thames Park, Lester Way, Wallingford OX10 9TA",
+                    false
+                ]
+            ],
+            "seoScore": [
+                [
+                    "C & K Landscaping",
+                    95.24
+                ],
+                [
+                    "Drivescape ltd",
+                    0
+                ],
+                [
+                    "A Taylor Surfacing Tarmac & Block Paving Contractor Bath & Trowbridge",
+                    89.76
+                ],
+                [
+                    "SD Home Improvements - Bristol Paving, Patios & Tarmac",
+                    93.41
+                ]
+            ],
+            "healthScore": [
+                100,
+                36.20689655172414,
+                100,
+                100,
+                84.05172413793103
+            ]
+        }
+    }
+}

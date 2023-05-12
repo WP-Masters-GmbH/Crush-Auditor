@@ -1,0 +1,38 @@
+{
+  "name": "crush-auditor",
+  "version": "0.1.0",
+  "main": "Gruntfile.js",
+  "author": "YOUR NAME HERE",
+  "scripts": {
+    "start": "wp-scripts start",
+    "build": "wp-scripts build",
+    "plugin-zip": "wp-scripts plugin-zip"
+  },
+  "files": [
+    "build",
+    "includes",
+    "templates",
+    "vendor",
+    "Logo-GMB-Crush.webp",
+    "mini-audit.php",
+    "readme.txt",
+    "uninstall.php"
+  ],
+  "devDependencies": {
+    "@wordpress/scripts": "24.6.0",
+    "grunt": "~0.4.5",
+    "grunt-wp-i18n": "~0.5.0",
+    "grunt-wp-readme-to-markdown": "~1.0.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "chart.js": "^4.1.1",
+    "classnames": "^2.3.2",
+    "react-bootstrap": "^2.7.0",
+    "react-chartjs-2": "^5.1.0",
+    "react-hook-form": "^7.39.7",
+    "react-phone-number-input": "^3.2.12",
+    "react-select": "^5.7.0",
+    "socket.io-client": "^4.5.4"
+  }
+}
